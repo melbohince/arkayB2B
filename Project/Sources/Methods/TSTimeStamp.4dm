@@ -6,6 +6,8 @@
 
 #DECLARE($date : Date; $time : Time)->$timestamp_i
 
+var $pc : Integer
+
 $pc:=Count parameters:C259
 
 Case of 

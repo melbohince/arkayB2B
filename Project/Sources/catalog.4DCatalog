@@ -19,6 +19,9 @@
 	<table name="Trading_Partners" uuid="A9E51E9E6F934B819E0BF43A494CFCE9" id="2">
 		<field name="ID" uuid="553523963B8A4BC081F7FDDE3E8F0ED4" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="RegisteredIP" uuid="15D9B9B621614F1C9ABAC67AC8689F30" type="10" limiting_length="20" id="2"/>
+		<field name="EndPoint" uuid="4A6B861FAA1141AB82BEFDCB31273314" type="10" limiting_length="30" id="3">
+			<field_extra multi_line="false"/>
+		</field>
 		<primary_key field_name="ID" field_uuid="553523963B8A4BC081F7FDDE3E8F0ED4"/>
 		<table_extra>
 			<editor_table_info displayable_fields_count="6">
@@ -32,6 +35,7 @@
 		<field name="Username" uuid="3B86D1EDCB7F46A9AB78FD81854D856B" type="10" limiting_length="30" id="2"/>
 		<field name="Password" uuid="A4DA9AE24C9E44CFBF117EE6390D97ED" type="10" limiting_length="30" id="3"/>
 		<field name="BasicAuthentication" uuid="ECAE2E4E80BE4248859DA671E48F814C" type="10" limiting_length="60" id="4"/>
+		<field name="EndPoint" uuid="55AE8B2F5F9449DB8AD449C3E9870B23" type="10" limiting_length="30" id="5"/>
 		<primary_key field_name="ID" field_uuid="DEE9B1ADD6974403B77F122D54778756"/>
 		<table_extra>
 			<editor_table_info displayable_fields_count="5">
