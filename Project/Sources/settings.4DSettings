@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="5">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="6">
 	<com.4d>
 		<web>
 			<standalone_server>
-				<configuration allowHttp="true" allow_ssl="false" port_number="8080">
+				<configuration allowHttp="true" allow_ssl="true" port_number="8080" publish_at_startup="true">
 					<hosts>
 						<host html_root="./WebFolder/" id="0" name="default"/>
 					</hosts>
