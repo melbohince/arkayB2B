@@ -5,7 +5,7 @@
 # Components/
 
 # Derived data
-DerivedData/
+Project/DerivedData/
 
 # Libraries, the apple silicon obj file lib4d-arm64.dylib too large
 Libraries/
@@ -24,8 +24,9 @@ Resources/php.ini
 Settings/*
 
 # User preferences
+userPreferences/
 userPreferences.*/
-userPreferences.MelvinBohince/*.json
+userPreferences.MelvinBohince/
 
 # Built application
 *.4DZ
