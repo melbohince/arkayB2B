@@ -9,7 +9,7 @@
   
 */
 
-#DECLARE($inbox_pkid)->$success : Boolean
+#DECLARE($inbox_pkid; $ams_ds : cs:C1710.DataStore)->$success : Boolean
 
 var $TESTING : Boolean
 var $NEEDS_MAPPED : Integer
@@ -17,15 +17,17 @@ var $local_e : cs:C1710.Web_InboxEntity
 var $status_o : Object
 
 $success:=False:C215
+
+$ams_ds:=(Count parameters:C259=2) ? $ams_ds : aMs_Open_RemoteDataStore
+If ($ams_ds=Null:C1517)
+	return $success
+End if 
+
 //todo:owc turn off testing
 $TESTING:=True:C214
 $NEEDS_MAPPED:=$TESTING ? -222 : 0
 
-//save to server and any others waiting in the inbox
-$ams_ds:=aMs_Open_RemoteDataStore
-If ($ams_ds=Null:C1517)
-	return $success
-End if 
+//save local to server 
 
 $ams_e:=$ams_ds.edi_Inbox.new()
 If ($ams_e=Null:C1517)
@@ -33,8 +35,6 @@ If ($ams_e=Null:C1517)
 End if 
 
 //mirror the local to the remote
-$ams_e:=$ams_ds.edi_Inbox.new()
-
 $local_e:=ds:C1482.Web_Inbox.get($inbox_pkid)
 //todo:owc test if this is unique
 $ams_e.ID:=$local_e.ID

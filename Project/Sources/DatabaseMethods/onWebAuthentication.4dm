@@ -14,7 +14,6 @@
   Current implementation checks the client's ip against a white list and the
      requestors username and password
 
-
 */
 
 // from https://developer.4d.com/docs/WebServer/authentication#on-web-authentication
@@ -28,8 +27,8 @@ var $denied : Boolean  //just for readability rather than setting $accessGranted
 $accessGranted:=True:C214  //must answer the riddle first my precious
 $denied:=False:C215
 
+//mark:Allow for route specific authentications in the caseof structure below
 
-//mark:-Allow for route specific authentications in the caseof structure below
 Case of 
 		
 		//mark:-.    ELC Project Synphony and cXML
@@ -45,7 +44,7 @@ Case of
 			return $denied
 		End if 
 		
-		//mark:-.        !!! Access granted !!!
+		//mark:.        !!! Access granted !!!
 		return $accessGranted
 		
 		
@@ -53,7 +52,7 @@ Case of
 	: (Position:C15("Rollstock_Scanner_url"; $url)>0)  //some_future_url
 		//not implemented
 		
-		//mark:-.    Else an unrecognized route requested, fail silently
+		//mark:.    Else an unrecognized route requested, fail silently
 	Else 
 		return $denied
 End case 

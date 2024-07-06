@@ -3,7 +3,9 @@
  Method: OWA_checkClientWhiteList   ( ) ->
  By: MelvinBohince @ 07/05/24, 00:03:40
  Description:
-  Check if the client's ip is known to be valid
+  Check if the client's ip is known to be valid,
+    ideally the client has been set up in Trading_Partners
+    see method _migrations; if not, a run-time collection is used
 
  Example Use:
   $accessGranted:=OWA_checkClientWhiteList($ipClient; "ELCAriba")
@@ -16,7 +18,7 @@ var $allowedClientIPs_c : Collection  //white list of ip's
 var $NOT_FOUND : Integer
 
 If (Count parameters:C259=0)  //testing
-	$ipClient:="1.1.1.1"
+	$ipClient:="1.1.1.1"  //fails
 	$endPointRequested:="ELCAriba"
 End if 
 

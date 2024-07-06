@@ -3,10 +3,12 @@
  Method: OWA_checkUserCredentials   ( ) ->
  By: MelvinBohince @ 07/05/24, 00:19:07
  Description:
-    Allow for credentials to be check for specific endpoints
+    Allow for credentials to be check for specific endpoints. Ideally 
+      the client has been set up in Web_Users
+      see method _migrations; if not, a run-time collection is used
 
     Testing using "Basic" Authorization mode for ELC Ariba, so user and password Base64 encoded 
-     from Postman for testing
+     from Postman for testing and extracted from the POST's headers
 
  Example Use:
   $accessGranted:=OWA_checkUserCredentials("ELCAriba")
