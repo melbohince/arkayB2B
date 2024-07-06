@@ -13,6 +13,7 @@
   $header_o:=OWC_makeHeaderObject
   $expectedBodyLength_i:=Num($header_o["Content-Length"])
 */
+// Modified by: MelvinBohince (7/6/24) remove Session.storage
 
 #DECLARE()->$header_o : Object
 
@@ -25,18 +26,10 @@ ARRAY TEXT:C222($httpHeaderValues_at; 0)
 WEB GET HTTP HEADER:C697($httpHeaderNames_at; $httpHeaderValues_at)
 
 //convert the header arrays to an object for ease of use and to pass by reference later
-$header_o:=New shared object:C1526  //in case it gets put into Storage
-Use ($header_o)
-	
-	//make a key-value pair for each header element
-	For ($i; 1; Size of array:C274($httpHeaderNames_at))
-		$header_o[$httpHeaderNames_at{$i}]:=$httpHeaderValues_at{$i}
-	End for 
-	
-End use 
-
-Use (Session:C1714.storage)  //to share with other processes
-	Session:C1714.storage.header_o:=$header_o
-End use 
+$header_o:=New object:C1471  //in case it gets put into Storage
+//make a key-value pair for each header element
+For ($i; 1; Size of array:C274($httpHeaderNames_at))
+	$header_o[$httpHeaderNames_at{$i}]:=$httpHeaderValues_at{$i}
+End for 
 
 return $header_o
