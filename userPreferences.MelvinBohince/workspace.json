@@ -1,11 +1,17 @@
 {
 	"editors": [
 		{
+			"type": "structure"
+		},
+		{
+			"type": "explorer"
+		},
+		{
 			"type": "method",
-			"id": 2147483641,
+			"id": 2147483645,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "OWC_ELC_ProjectSymphony"
+				"methodName": "OWC_sendResponse"
 			}
 		},
 		{
@@ -18,14 +24,11 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483637,
+			"id": 2147483642,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "OWC_initResponseObject"
+				"methodName": "OWC_initHeaderObject"
 			}
-		},
-		{
-			"type": "explorer"
 		},
 		{
 			"type": "method",
@@ -33,14 +36,6 @@
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "TSTimeStamp"
-			}
-		},
-		{
-			"type": "method",
-			"id": 2147483635,
-			"codeDescriptor": {
-				"type": 5,
-				"databaseMethod": 8
 			}
 		},
 		{

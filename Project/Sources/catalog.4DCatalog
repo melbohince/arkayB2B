@@ -16,9 +16,43 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
+	<table name="Trading_Partners" uuid="A9E51E9E6F934B819E0BF43A494CFCE9" id="2">
+		<field name="ID" uuid="553523963B8A4BC081F7FDDE3E8F0ED4" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="RegisteredIP" uuid="15D9B9B621614F1C9ABAC67AC8689F30" type="10" limiting_length="20" id="2"/>
+		<primary_key field_name="ID" field_uuid="553523963B8A4BC081F7FDDE3E8F0ED4"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Web_Users" uuid="ED11010E5E144F7F8C9991A26E83C028" id="3">
+		<field name="ID" uuid="DEE9B1ADD6974403B77F122D54778756" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Username" uuid="3B86D1EDCB7F46A9AB78FD81854D856B" type="10" limiting_length="30" id="2"/>
+		<field name="Password" uuid="A4DA9AE24C9E44CFBF117EE6390D97ED" type="10" limiting_length="30" id="3"/>
+		<field name="BasicAuthentication" uuid="ECAE2E4E80BE4248859DA671E48F814C" type="10" limiting_length="60" id="4"/>
+		<primary_key field_name="ID" field_uuid="DEE9B1ADD6974403B77F122D54778756"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="5">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="401.60546875" top="41.296875" width="185.29296875" height="165.34375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
 	<index kind="regular" unique_keys="true" uuid="527A0F45D54A43E68BA2A4105AC92ECC" type="7">
 		<field_ref uuid="FB5169375BA142F7A1E9C68DDE13D343" name="ID">
 			<table_ref uuid="97716D8DBC6F4525BFDED9DBCF4E426A" name="Web_Inbox"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="6034254761C843A990E2F0F1FE7F6268" type="7">
+		<field_ref uuid="DEE9B1ADD6974403B77F122D54778756" name="ID">
+			<table_ref uuid="ED11010E5E144F7F8C9991A26E83C028" name="Web_Users"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="D68CEC7E67C04B65B445783CBE425B31" type="7">
+		<field_ref uuid="553523963B8A4BC081F7FDDE3E8F0ED4" name="ID">
+			<table_ref uuid="A9E51E9E6F934B819E0BF43A494CFCE9" name="Trading_Partners"/>
 		</field_ref>
 	</index>
 	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
