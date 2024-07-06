@@ -23,7 +23,7 @@ var $result_t : Text
 
 $header_o:=OWC_initHeaderObject
 
-$response_o:=OWC_initResponseObject
+$response_o:=OWC_initResponseObject("200 OK")
 
 Case of 
 		//mark:-.    ELC Project Symphony

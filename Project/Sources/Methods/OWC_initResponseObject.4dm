@@ -9,15 +9,15 @@
   $response_o:=OWC_makeResponseObject
 */
 
-#DECLARE()->$response_o : Object
+#DECLARE($defaultResponse : Text)->$response_o : Object
 
 $response_o:=New shared object:C1526
 Use ($response_o)
-	$response_o.response:="200 OK"  //default to non-specific problem
+	$response_o.response:=$defaultResponse  //default to non-specific problem
 	$response_o.responseHeaderNames_c:=New shared collection:C1527
 	$response_o.responseHeaderNames_c.push("X-STATUS")  //same in all cases
 	$response_o.responseHeaderValues_c:=New shared collection:C1527  //can be good or bad
-	$response_o.responseHeaderValues_c.push("200 OK")
+	$response_o.responseHeaderValues_c.push($defaultResponse)
 End use 
 
 Use (Session:C1714.storage)  //to share with other processes
