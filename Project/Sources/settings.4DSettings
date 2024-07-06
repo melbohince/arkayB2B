@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="5">
+	<com.4d>
+		<web>
+			<standalone_server>
+				<configuration allowHttp="true" allow_ssl="false" port_number="8080">
+					<hosts>
+						<host html_root="./WebFolder/" id="0" name="default"/>
+					</hosts>
+				</configuration>
+				<log format="3" tokens="BYTES-SENT;C-DNS;C-IP;CS(COOKIE);CS(HOST);CS(REFERER);CS(USER-AGENT);USER;METHOD;CS-SIP;STATUS;CS-URI;CS-URI-QUERY;CS-URI-STEM;DATE;TIME;TRANSFER_TIME"/>
+				<rest launch_at_startup="true"/>
+				<webservices>
+					<server allow_requests="false"/>
+				</webservices>
+			</standalone_server>
+		</web>
+	</com.4d>
+</preferences>

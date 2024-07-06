@@ -1,0 +1,86 @@
+{
+	"Sources/DatabaseMethods/onWebAuthentication.4dm": {
+		"left": 157,
+		"top": 138,
+		"width": 1158,
+		"height": 1231
+	},
+	"Sources/DatabaseMethods/onWebConnection.4dm": {
+		"left": 480,
+		"top": 439,
+		"width": 1326,
+		"height": 845
+	},
+	"Sources/Methods/OWC_ELC_ProjectSymphony.4dm": {
+		"left": 1196,
+		"top": 316,
+		"width": 965,
+		"height": 1011
+	},
+	"Sources/Methods/OWA_checkClientWhiteList.4dm": {
+		"left": 976,
+		"top": 334,
+		"width": 1509,
+		"height": 943
+	},
+	"Sources/Methods/OWA_checkUserCredentials.4dm": {
+		"left": 259,
+		"top": 542,
+		"width": 1314,
+		"height": 1004
+	},
+	"Trash/Methods/(old_footprints_OWC).4dm": {
+		"left": 480,
+		"top": 439,
+		"width": 1509,
+		"height": 943
+	},
+	"Sources/Methods/OWC_initResponseObject.4dm": {
+		"left": 1575,
+		"top": 363,
+		"width": 965,
+		"height": 667
+	},
+	"Sources/Methods/OWC_initHeaderObject.4dm": {
+		"left": 976,
+		"top": 334,
+		"width": 1158,
+		"height": 847
+	},
+	"Sources/Methods/OWC_sendResponse.4dm": {
+		"left": 1082,
+		"top": 222,
+		"width": 1314,
+		"height": 1004
+	},
+	"Sources/Methods/OWC_setResponse.4dm": {
+		"left": 566,
+		"top": 732,
+		"width": 1007,
+		"height": 814
+	},
+	"Sources/Methods/aMs_Open_RemoteDataStore.4dm": {
+		"left": 39,
+		"top": 229,
+		"width": 1448,
+		"height": 893
+	},
+	"Sources/Methods/TSTimeStamp.4dm": {
+		"left": 1106,
+		"top": 329,
+		"width": 965,
+		"height": 1019
+	},
+	"Sources/Methods/OWC_saveToInbox.4dm": {
+		"left": 268,
+		"top": 384,
+		"width": 1008,
+		"height": 631
+	},
+	"Sources/Methods/OWC_saveToAMS.4dm": {
+		"left": 757,
+		"top": 323,
+		"width": 1120,
+		"height": 996
+	}
+}

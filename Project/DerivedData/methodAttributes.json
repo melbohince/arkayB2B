@@ -1,0 +1,40 @@
+{
+	"methods": {
+		"OWC_setResponse": {
+			"timeStamp": "2024-07-05T18:57:11Z"
+		},
+		"OWA_checkClientWhiteList": {
+			"timeStamp": "2024-07-05T18:48:07Z"
+		},
+		"OWC_sendResponse": {
+			"timeStamp": "2024-07-05T18:28:39Z"
+		},
+		"aMs_Open_RemoteDataStore": {
+			"timeStamp": "2024-07-06T00:40:16Z"
+		},
+		"OWC_saveToInbox": {
+			"timeStamp": "2024-07-06T01:24:16Z"
+		},
+		"OWC_initHeaderObject": {
+			"timeStamp": "2024-07-05T18:23:26Z"
+		},
+		"OWC_ELC_ProjectSymphony": {
+			"timeStamp": "2024-07-06T01:24:16Z"
+		},
+		"OWC_saveToAMS": {
+			"timeStamp": "2024-07-06T01:24:16Z"
+		},
+		"OWA_checkUserCredentials": {
+			"timeStamp": "2024-07-05T17:24:48Z"
+		},
+		"TSTimeStamp": {
+			"timeStamp": "2024-07-06T00:50:17Z"
+		},
+		"OWC_initResponseObject": {
+			"timeStamp": "2024-07-05T18:28:39Z"
+		},
+		"(old_footprints_OWC)": {
+			"timeStamp": "2024-07-05T03:48:24Z"
+		}
+	}
+}

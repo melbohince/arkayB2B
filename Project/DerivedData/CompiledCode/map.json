@@ -1,0 +1,237 @@
+{
+	"map": [
+		{
+			"id": 2147483647,
+			"path": "Sources/Methods/OWC_setResponse.4dm",
+			"parameters": [
+				{
+					"parameterName": "responseToSend",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "response",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "responseHeaderValue",
+					"parameterType": 284
+				}
+			]
+		},
+		{
+			"id": 2147483646,
+			"path": "Sources/Methods/OWA_checkClientWhiteList.4dm",
+			"parameters": [
+				{
+					"parameterName": "accessGranted",
+					"parameterType": 305
+				},
+				{
+					"parameterName": "ipClient",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "endPointRequested",
+					"parameterType": 284
+				}
+			]
+		},
+		{
+			"id": 2147483645,
+			"path": "Sources/Methods/OWC_sendResponse.4dm",
+			"parameters": [
+				{
+					"parameterName": "responseSent",
+					"parameterType": 284
+				}
+			]
+		},
+		{
+			"id": 2147483644,
+			"path": "Sources/Methods/OWC_initHeaderObject.4dm",
+			"parameters": [
+				{
+					"parameterName": "header_o",
+					"parameterType": 1216
+				}
+			]
+		},
+		{
+			"id": 2147483643,
+			"path": "Sources/Methods/OWC_ELC_ProjectSymphony.4dm",
+			"parameters": [
+				{
+					"parameterName": "result_t",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "header_o",
+					"parameterType": 1216
+				}
+			]
+		},
+		{
+			"id": 2147483642,
+			"path": "Sources/Methods/OWA_checkUserCredentials.4dm",
+			"parameters": [
+				{
+					"parameterName": "accessGranted",
+					"parameterType": 305
+				},
+				{
+					"parameterName": "endPointRequested",
+					"parameterType": 284
+				}
+			]
+		},
+		{
+			"id": 2147483641,
+			"path": "Sources/Methods/OWC_initResponseObject.4dm",
+			"parameters": [
+				{
+					"parameterName": "response_o",
+					"parameterType": 1216
+				}
+			]
+		},
+		{
+			"id": 2147483640,
+			"path": "Trash/Methods/(old_footprints_OWC).4dm"
+		},
+		{
+			"id": 2147483639,
+			"path": "Sources/DatabaseMethods/onWebConnection.4dm",
+			"parameters": [
+				{
+					"parameterName": "",
+					"parameterType": 0
+				},
+				{
+					"parameterName": "url",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "header",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "ipClient",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "ipServer",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "user",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "password",
+					"parameterType": 284
+				}
+			]
+		},
+		{
+			"id": 2147483638,
+			"path": "Sources/DatabaseMethods/onWebAuthentication.4dm",
+			"parameters": [
+				{
+					"parameterName": "accessGranted",
+					"parameterType": 305
+				},
+				{
+					"parameterName": "url",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "header",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "ipClient",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "ipServer",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "user",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "password",
+					"parameterType": 284
+				}
+			]
+		},
+		{
+			"id": 2147483637,
+			"path": "Sources/Methods/aMs_Open_RemoteDataStore.4dm",
+			"parameters": [
+				{
+					"parameterName": "ams_ds",
+					"parameterType": 1710
+				},
+				{
+					"parameterName": "AMS_REST_ADDRESS",
+					"parameterType": 284
+				}
+			]
+		},
+		{
+			"id": 2147483636,
+			"path": "Sources/Methods/TSTimeStamp.4dm",
+			"parameters": [
+				{
+					"parameterName": "timestamp_i",
+					"parameterType": 1683
+				},
+				{
+					"parameterName": "date",
+					"parameterType": 307
+				},
+				{
+					"parameterName": "time",
+					"parameterType": 306
+				}
+			]
+		},
+		{
+			"id": 2147483635,
+			"path": "Sources/Methods/OWC_saveToInbox.4dm",
+			"parameters": [
+				{
+					"parameterName": "inbox_pkid",
+					"parameterType": 283
+				},
+				{
+					"parameterName": "pathValue",
+					"parameterType": 284
+				},
+				{
+					"parameterName": "body_ptr",
+					"parameterType": 301
+				}
+			]
+		},
+		{
+			"id": 2147483634,
+			"path": "Sources/Methods/OWC_saveToAMS.4dm",
+			"parameters": [
+				{
+					"parameterName": "success",
+					"parameterType": 305
+				},
+				{
+					"parameterName": "inbox_pkid",
+					"parameterType": 1683
+				}
+			]
+		}
+	],
+	"targets": {
+		"arm64_macOS_lib": true
+	}
+}

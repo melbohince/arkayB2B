@@ -1,0 +1,128 @@
+{
+	"Sources/DatabaseMethods/onWebAuthentication.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 30,
+		"lastSelectedLine": 30,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-05T18:23:26.757Z"
+	},
+	"Sources/DatabaseMethods/onWebConnection.4dm": {
+		"startSelection": 11,
+		"endSelection": 34,
+		"firstSelectedLine": 32,
+		"lastSelectedLine": 32,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-06T01:49:15.137Z"
+	},
+	"Sources/Methods/OWC_ELC_ProjectSymphony.4dm": {
+		"startSelection": 5,
+		"endSelection": 5,
+		"firstSelectedLine": 63,
+		"lastSelectedLine": 63,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-06T01:49:15.156Z"
+	},
+	"Sources/Methods/OWA_checkClientWhiteList.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 29,
+		"lastSelectedLine": 29,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-05T18:48:07.821Z"
+	},
+	"Sources/Methods/OWA_checkUserCredentials.4dm": {
+		"startSelection": 77,
+		"endSelection": 92,
+		"firstSelectedLine": 36,
+		"lastSelectedLine": 36,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-05T17:24:48.602Z"
+	},
+	"Trash/Methods/(old_footprints_OWC).4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 20,
+		"lastSelectedLine": 20,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-05T03:48:24.705Z"
+	},
+	"Sources/Methods/OWC_initResponseObject.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 23,
+		"lastSelectedLine": 23,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-06T01:49:15.141Z"
+	},
+	"Sources/Methods/OWC_initHeaderObject.4dm": {
+		"startSelection": 38,
+		"endSelection": 38,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-05T18:23:26.760Z"
+	},
+	"Sources/Methods/OWC_sendResponse.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-05T18:28:39.357Z"
+	},
+	"Sources/Methods/OWC_setResponse.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 24,
+		"lastSelectedLine": 24,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-05T18:57:11.288Z"
+	},
+	"Sources/Methods/aMs_Open_RemoteDataStore.4dm": {
+		"startSelection": 14,
+		"endSelection": 14,
+		"firstSelectedLine": 32,
+		"lastSelectedLine": 32,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-06T00:40:16.416Z"
+	},
+	"Sources/Methods/TSTimeStamp.4dm": {
+		"startSelection": 13,
+		"endSelection": 24,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-06T00:50:17.038Z"
+	},
+	"Sources/Methods/OWC_saveToInbox.4dm": {
+		"startSelection": 22,
+		"endSelection": 22,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-06T01:41:05.875Z"
+	},
+	"Sources/Methods/OWC_saveToAMS.4dm": {
+		"startSelection": 34,
+		"endSelection": 34,
+		"firstSelectedLine": 45,
+		"lastSelectedLine": 45,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-06T01:33:14.356Z"
+	}
+}

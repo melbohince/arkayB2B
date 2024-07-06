@@ -1,0 +1,32 @@
+[
+	{
+		"type": 66,
+		"formula": "Session:C1714"
+	},
+	{
+		"type": 66,
+		"formula": "$allowedAuthentications_c",
+		"expanded": true
+	},
+	{
+		"type": 66,
+		"formula": "$actualBodyLength"
+	},
+	{
+		"type": 66,
+		"formula": "Length:C16($body)"
+	},
+	{
+		"type": 66,
+		"formula": "$body"
+	},
+	{
+		"type": 66,
+		"formula": "$expectedBodyLength_i"
+	},
+	{
+		"type": 66,
+		"formula": "$header_o",
+		"expanded": true
+	}
+]

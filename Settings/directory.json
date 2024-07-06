@@ -1,0 +1,28 @@
+{
+	"users": {
+		"designer": {
+			"alias": "Designer"
+		},
+		"administrator": {
+			"alias": "Administrator"
+		},
+		"ELC Ariba User": {
+			"password": "$2y$10$CkcwBcDD5vkRJu41/uZHEeStc02WcqMnXkyv6NXwzOutLQx4WkDme"
+		}
+	},
+	"sqlSchemaGranters": {
+		"DEFAULT_SCHEMA": {
+			"readOnlyAccessGroup": "*",
+			"readWriteAccessGroup": "*",
+			"allAccessGroup": ""
+		}
+	},
+	"settings": {
+		"localGenericWebUser": "Designer",
+		"designAccessGroup": "*",
+		"localMobileAccessGroupRW": "*",
+		"remoteMobileAccessGroupRW": "*",
+		"remoteGenericWebUser": "Designer",
+		"remoteDefaultUser": ""
+	}
+}
