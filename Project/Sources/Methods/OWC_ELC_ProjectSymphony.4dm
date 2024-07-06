@@ -58,18 +58,17 @@ $inbox_pkid:=OWC_saveToInbox($pathValue; ->$body)
 If ($inbox_pkid>0)
 	$remoteSuccess:=OWC_saveToAMS($inbox_pkid)
 	
-	If (Not:C34($remoteSuccess))
-		$result_t:=OWC_setResponse("551"; "551 Internal Error")
+	If (Not:C34($remoteSuccess))  //no worries, will get it later
+		//if remote save is not successful, will need a second pass in a batch
+		// like: 
+		//.   $inbox_es:=ds.Web_Inbox.query("SentToAMS_UTC = :1"; "nope")
+		//.   If ($inbox_es.length=0)
+		//.     return $success
+		//.   end if
+		//.   For each ($inbox_e; $inbox_es)...try to save to AMS
 	End if 
 	
 Else 
 	$result_t:=OWC_setResponse("550"; "550 Internal Error")
 End if 
 
-//if remote save is not successful will need a second pass in a batch
-// like: 
-//.   $inbox_es:=ds.Web_Inbox.query("SentToAMS_UTC = :1"; "nope")
-//.   If ($inbox_es.length=0)
-//.     return $success
-//.   end if
-//.   For each ($inbox_e; $inbox_es)
