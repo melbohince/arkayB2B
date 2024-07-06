@@ -9,7 +9,7 @@
 
 #DECLARE($AMS_REST_ADDRESS : Text)->$ams_ds : cs:C1710.DataStore
 
-$AMS_REST_ADDRESS:=(Count parameters:C259=1) ? $AMS_REST_ADDRESS : "192.168.1.100:80"  //production
+$AMS_REST_ADDRESS:=(Count parameters:C259=1) ? $AMS_REST_ADDRESS : "192.168.1.72:8080"  //production
 //$AMS_REST_ADDRESS:="10.0.0.152:8080"  //home network
 
 var $connectTo : Object

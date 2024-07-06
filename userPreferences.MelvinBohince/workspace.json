@@ -2,15 +2,7 @@
 	"editors": [
 		{
 			"type": "method",
-			"id": 2147483643,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "OWC_ELC_ProjectSymphony"
-			}
-		},
-		{
-			"type": "method",
-			"id": 2147483634,
+			"id": 2147483640,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "OWC_saveToAMS"
@@ -18,7 +10,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483639,
+			"id": 2147483634,
 			"codeDescriptor": {
 				"type": 5,
 				"databaseMethod": 6
@@ -29,15 +21,15 @@
 			"id": 2147483641,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "OWC_initResponseObject"
+				"methodName": "OWC_ELC_ProjectSymphony"
 			}
 		},
 		{
 			"type": "method",
-			"id": 2147483635,
+			"id": 2147483637,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "OWC_saveToInbox"
+				"methodName": "OWC_initResponseObject"
 			}
 		},
 		{
@@ -45,7 +37,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483636,
+			"id": 2147483638,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "TSTimeStamp"
@@ -53,7 +45,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483638,
+			"id": 2147483635,
 			"codeDescriptor": {
 				"type": 5,
 				"databaseMethod": 8

@@ -19,5 +19,12 @@
 			"type": 1,
 			"methodName": "OWC_saveToInbox"
 		}
+	},
+	{
+		"line": 23,
+		"method": {
+			"type": 1,
+			"methodName": "OWC_saveToAMS"
+		}
 	}
 ]

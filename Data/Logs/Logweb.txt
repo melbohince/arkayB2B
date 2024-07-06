@@ -51,3 +51,11 @@
 6 127.0.0.1 127.0.0.1 "4DSID_testOnWeb=E6339648D7564A7498C3D8853614B70A" "mlb.local:8080" "" "PostmanRuntime/7.39.0" ELC_Ariba_User POST 127.0.0.1 200 /ELCAriba/ - /ELCAriba/ 2024-07-05 20:07:21 20:07:21 61240
 6 127.0.0.1 127.0.0.1 "4DSID_testOnWeb=E6339648D7564A7498C3D8853614B70A" "mlb.local:8080" "" "PostmanRuntime/7.39.0" ELC_Ariba_User POST 127.0.0.1 200 /ELCAriba/ - /ELCAriba/ 2024-07-05 20:09:02 20:09:02 89837
 6 127.0.0.1 127.0.0.1 "4DSID_testOnWeb=E6339648D7564A7498C3D8853614B70A" "mlb.local:8080" "" "PostmanRuntime/7.39.0" ELC_Ariba_User POST 127.0.0.1 200 /ELCAriba/ - /ELCAriba/ 2024-07-05 20:09:04 20:09:04 96475
+#Version: 1.0
+#Software: 4D/19.5.0
+#Date: 2024-07-05 22:05:27
+#Remark: format ELF
+#Fields: bytes_sent cs-cdns c-ip cs(cookie) cs(host) cs(referer) cs(user-agent) user method cs-sip sc-status cs-uri cs-uri-query cs-uri-stem date time time-taken
+3 127.0.0.1 127.0.0.1 "4DSID_testOnWeb=E6339648D7564A7498C3D8853614B70A" "mlb.local:8080" "" "PostmanRuntime/7.39.0" ELC_Ariba_User POST 127.0.0.1 551 /ELCAriba/ - /ELCAriba/ 2024-07-06 02:05:27 02:05:27 112439
+3 127.0.0.1 127.0.0.1 "4DSID_ArkayB2B=1275751655C14B5CB5397C7E056BF884; 4DSID_testOnWeb=E6339648D7564A7498C3D8853614B70A" "mlb.local:8080" "" "PostmanRuntime/7.39.0" ELC_Ariba_User POST 127.0.0.1 551 /ELCAriba/ - /ELCAriba/ 2024-07-06 02:08:22 02:08:22 67527
+6 127.0.0.1 127.0.0.1 "4DSID_ArkayB2B=1275751655C14B5CB5397C7E056BF884; 4DSID_testOnWeb=E6339648D7564A7498C3D8853614B70A" "mlb.local:8080" "" "PostmanRuntime/7.39.0" ELC_Ariba_User POST 127.0.0.1 200 /ELCAriba/ - /ELCAriba/ 2024-07-06 02:11:02 02:11:02 77842
