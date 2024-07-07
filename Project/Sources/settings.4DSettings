@@ -1,18 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="6">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="8">
 	<com.4d>
 		<web>
 			<standalone_server>
 				<configuration allowHttp="true" allow_ssl="true" port_number="8080" publish_at_startup="true">
 					<hosts>
-						<host html_root="./WebFolder/" id="0" name="default"/>
+						<host html_root="/Users/mel/Documents/_repos/arkayB2Bv20/WebFolder/" id="0" name="default"/>
 					</hosts>
 				</configuration>
-				<log format="3" tokens="BYTES-SENT;C-DNS;C-IP;CS(COOKIE);CS(HOST);CS(REFERER);CS(USER-AGENT);USER;METHOD;CS-SIP;STATUS;CS-URI;CS-URI-QUERY;CS-URI-STEM;DATE;TIME;TRANSFER_TIME"/>
+				<log format="1" tokens=""/>
 				<rest launch_at_startup="true"/>
 				<webservices>
 					<server allow_requests="false"/>
 				</webservices>
 			</standalone_server>
 		</web>
+		<compiler>
+			<typage default_for_button="2"/>
+		</compiler>
+		<server>
+			<network>
+				<options publication_name="ArkayB2B"/>
+			</network>
+		</server>
+		<sql>
+			<publication allow_flash_player_requests="false"/>
+		</sql>
 	</com.4d>
 </preferences>

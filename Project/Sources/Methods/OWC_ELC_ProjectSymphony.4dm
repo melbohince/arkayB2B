@@ -12,7 +12,7 @@
 
 #DECLARE($header_o : Object)->$result_t : Text
 
-var $body; $EXPECTED_CONTENT_TYPE; $xmlRef_t : Text
+var $body; $EXPECTED_CONTENT_TYPE; $xmlRef_t; $payloadID_t : Text
 var $expectedBodyLength_i; $actualBodyLength; $XML_PARSE_FAILURE : Integer
 var $requestBody_blob : Blob
 
@@ -49,11 +49,13 @@ If (ok=0)  //& (error#0)
 	return 
 End if 
 
+DOM GET XML ATTRIBUTE BY NAME:C728($xmlRef_t; "payloadID"; $payloadID_t)
+
 //mark:-If passed tests, save body to the Web_Inbox and AMS.edi_Inbox
 
 //save body locally
 $pathValue:=$header_o["X-METHOD"]+" "+$header_o["X-URL"]
-$inbox_pkid:=OWC_saveToInbox($pathValue; ->$body)
+$inbox_pkid:=OWC_saveToInbox($pathValue; $payloadID_t; ->$body)
 
 If ($inbox_pkid>0)
 	$remoteSuccess:=OWC_saveToAMS($inbox_pkid)
