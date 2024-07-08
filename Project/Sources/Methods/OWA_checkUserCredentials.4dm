@@ -29,12 +29,8 @@ If (Count parameters:C259=0)  //testing
 	$authorizationValue:="Basic "+$encodedUser
 	
 Else 
-	//get the authorization header and its value
-	ARRAY TEXT:C222($httpHeaderNames_at; 0)
-	ARRAY TEXT:C222($httpHeaderValues_at; 0)
-	
-	WEB GET HTTP HEADER:C697($httpHeaderNames_at; $httpHeaderValues_at)
-	$authorizationValue:=$httpHeaderValues_at{Find in array:C230($httpHeaderNames_at; "Authorization")}
+	//get the authorization header's value
+	$authorizationValue:=Session:C1714.storage.header_o["Authorization"]
 End if 
 
 $accessGranted:=True:C214

@@ -23,6 +23,13 @@ $user : Text; $password : Text)\
 ->$accessGranted : Boolean
 
 var $denied : Boolean  //just for readability rather than setting $accessGranted to false
+var $header_o : Object  //header arrays packed into dictionary object and placed into Session.storage
+var $response_o : Object  //will be placed into Session.storage
+
+
+$header_o:=OWC_initHeaderObject
+
+$response_o:=OWC_initResponseObject("202 Accepted")
 
 $accessGranted:=True:C214  //must answer the riddle first my precious
 $denied:=False:C215
@@ -36,11 +43,13 @@ Case of
 		
 		$accessGranted:=OWA_checkClientWhiteList($ipClient; "ELCAriba")
 		If (Not:C34($accessGranted))
+			$result_t:=OWC_setResponse("403 Forbidden")
 			return $denied
 		End if 
 		
 		$accessGranted:=OWA_checkUserCredentials("ELCAriba")
 		If (Not:C34($accessGranted))
+			$result_t:=OWC_setResponse("401 Unauthorized")
 			return $denied
 		End if 
 		
@@ -51,8 +60,11 @@ Case of
 		//mark:-.    Some future routing that is permitted
 	: (Position:C15("Rollstock_Scanner_url"; $url)>0)  //some_future_url
 		//not implemented
+		$result_t:=OWC_setResponse("404 Not Found")
+		return $denied
 		
-		//mark:.    Else an unrecognized route requested, fail silently
-	Else 
+	Else   //Else an unrecognized route requested, fail silently
 		return $denied
 End case 
+
+$result_t:=OWC_sendResponse

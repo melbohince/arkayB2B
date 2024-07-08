@@ -17,23 +17,17 @@
 $ipClient : Text; $ipServer : Text; \
 $user : Text; $password : Text)
 
-var $header_o : Object  //header arrays packed into dictionary object
-var $response_o : Object  //will be placed into Session.storage
 var $result_t : Text
-
-$header_o:=OWC_initHeaderObject
-
-$response_o:=OWC_initResponseObject("200 OK")
 
 //mark:-Decide what route a client is looking for
 
 Case of 
 		
 		//mark:-.    ELC Project Symphony
-	: ($header_o["X-URL"]="/ELCAriba/") && ($header_o["X-METHOD"]="POST")  //now you can eat chicken and don't have to steal
+	: (Session:C1714.storage.header_o["X-URL"]="/ELCAriba/") && (Session:C1714.storage.header_o["X-METHOD"]="POST")  //now you can eat chicken and don't have to steal
 		
 		//pass the headers to a specific strategy
-		$result_t:=OWC_ELC_ProjectSymphony($header_o)
+		$result_t:=OWC_ELC_ProjectSymphony(Session:C1714.storage.header_o)
 		
 		$result_t:=OWC_sendResponse
 		
