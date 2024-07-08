@@ -13,13 +13,13 @@ void proc_TSTIMESTAMP( Asm4d_globals *glob, tProcessGlobals *ctx, int32_t inNbEx
 		if (0!=lpc.get()) goto _3;
 		{
 			Date t2;
-			c.f.fLine=12;
+			c.f.fLine=14;
 			if (g->Call(ctx,(PCV[]){t2.cv()},0,33)) goto _0;
 			Parm<Date>(inParams,inNbParam,1)=t2.get();
 		}
 		{
 			Time t3;
-			c.f.fLine=13;
+			c.f.fLine=15;
 			if (g->Call(ctx,(PCV[]){t3.cv()},0,178)) goto _0;
 			Parm<Time>(inParams,inNbParam,2)=t3.get();
 		}
@@ -38,7 +38,7 @@ _5:
 _6:
 		{
 			Time t6;
-			c.f.fLine=21;
+			c.f.fLine=23;
 			if (g->Call(ctx,(PCV[]){t6.cv()},0,178)) goto _0;
 			Parm<Time>(inParams,inNbParam,2)=t6.get();
 		}
@@ -67,7 +67,7 @@ _2:
 			t12=t11.get();
 			Num t13;
 			t13=t10.get()+t12.get();
-			c.f.fLine=31;
+			c.f.fLine=33;
 			if (!g->SetValue(ctx,(PCV[]){t13.cv(),Res<Variant>(outResult).cv(),nullptr})) goto _0;
 		}
 		goto _0;

@@ -1,22 +1,40 @@
 {
 	"editors": [
 		{
-			"type": "structure"
+			"type": "method",
+			"id": 2147483631,
+			"codeDescriptor": {
+				"type": 5,
+				"databaseMethod": 8
+			}
 		},
 		{
-			"type": "explorer"
+			"type": "method",
+			"id": 2147483636,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "OWA_checkUserCredentials"
+			}
 		},
 		{
 			"type": "method",
 			"id": 2147483645,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "OWC_sendResponse"
+				"methodName": "OWA_checkClientWhiteList"
 			}
 		},
 		{
 			"type": "method",
-			"id": 2147483634,
+			"id": 2147483639,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "OWC_ELC_ProjectSymphony"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483630,
 			"codeDescriptor": {
 				"type": 5,
 				"databaseMethod": 6
@@ -24,10 +42,10 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483642,
+			"id": 2147483646,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "OWC_initHeaderObject"
+				"methodName": "InboxSyncToAMS"
 			}
 		},
 		{
@@ -35,16 +53,11 @@
 			"id": 2147483638,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "TSTimeStamp"
+				"methodName": "OWC_saveToAMS"
 			}
 		},
 		{
-			"type": "method",
-			"id": 2147483647,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "OWC_setResponse"
-			}
+			"type": "explorer"
 		}
 	]
 }

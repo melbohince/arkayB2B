@@ -60,7 +60,7 @@
 					"type": "text",
 					"text": "Received",
 					"top": 10,
-					"left": 270,
+					"left": 98,
 					"width": 100,
 					"height": 17
 				},
@@ -80,7 +80,7 @@
 					"top": 30,
 					"height": 30,
 					"left": 0,
-					"right": 530
+					"right": 810
 				},
 				"label_ID1": {
 					"type": "text",
@@ -95,7 +95,7 @@
 					"dataSource": "[edi_Inbox:1]ID:1",
 					"top": 37,
 					"left": 10,
-					"width": 250,
+					"width": 79,
 					"height": 17,
 					"borderStyle": "none"
 				},
@@ -109,7 +109,7 @@
 					"type": "text",
 					"text": "Content",
 					"top": 10,
-					"left": 270,
+					"left": 274,
 					"width": 100,
 					"height": 17
 				},
@@ -118,12 +118,44 @@
 					"dataSource": "[edi_Inbox:1]Content_Text:3",
 					"top": 37,
 					"left": 270,
-					"width": 250,
+					"width": 210,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"field_Received2": {
+					"type": "input",
+					"dataSource": "[Web_Inbox:1]PayloadID:6",
+					"top": 37,
+					"left": 515,
+					"width": 290,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"label_Received2": {
+					"type": "text",
+					"text": "PayloadID",
+					"top": 10,
+					"left": 515,
+					"width": 100,
+					"height": 17
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 507
+				},
+				"field_ID2": {
+					"type": "input",
+					"dataSource": "[Web_Inbox:1]Received_UTC:4",
+					"top": 37,
+					"left": 98,
+					"width": 163,
 					"height": 17,
 					"borderStyle": "none"
 				}
 			}
 		}
 	],
-	"geometryStamp": 2
+	"geometryStamp": 99
 }

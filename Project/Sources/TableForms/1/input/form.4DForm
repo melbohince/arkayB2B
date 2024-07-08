@@ -49,13 +49,15 @@
 					"dataSource": "[edi_Inbox:1]ID:1",
 					"top": 10,
 					"left": 120,
-					"width": 250,
-					"height": 17
+					"width": 90,
+					"height": 17,
+					"textAlign": "left",
+					"enterable": false
 				},
 				"label_Path": {
 					"type": "text",
 					"text": "Path:",
-					"top": 47,
+					"top": 35,
 					"left": 10,
 					"width": 100,
 					"height": 17
@@ -63,33 +65,35 @@
 				"field_Path": {
 					"type": "input",
 					"dataSource": "[edi_Inbox:1]Path:2",
-					"top": 47,
+					"top": 35,
 					"left": 120,
-					"width": 250,
-					"height": 17
+					"width": 210,
+					"height": 17,
+					"enterable": false
 				},
 				"label_Content_Text": {
 					"type": "text",
 					"text": "Content_Text:",
-					"top": 84,
+					"top": 85,
 					"left": 10,
 					"width": 100,
-					"height": 136
+					"height": 16
 				},
 				"field_Content_Text": {
 					"type": "input",
 					"dataSource": "[edi_Inbox:1]Content_Text:3",
-					"top": 84,
+					"top": 85,
 					"left": 120,
-					"width": 580,
-					"height": 289,
+					"width": 700,
+					"height": 449,
 					"scrollbarHorizontal": "visible",
-					"scrollbarVertical": "visible"
+					"scrollbarVertical": "visible",
+					"enterable": false
 				},
 				"label_Received": {
 					"type": "text",
-					"text": "Received:",
-					"top": 427,
+					"text": "Received_UTC:",
+					"top": 60,
 					"left": 10,
 					"width": 100,
 					"height": 17
@@ -97,13 +101,38 @@
 				"field_Received": {
 					"type": "input",
 					"dataSource": "[edi_Inbox:1]Received:4",
-					"top": 427,
+					"top": 60,
 					"left": 120,
-					"width": 250,
+					"width": 210,
+					"height": 17,
+					"enterable": false
+				},
+				"field_Path1": {
+					"type": "input",
+					"dataSource": "[Web_Inbox:1]PayloadID:6",
+					"top": 35,
+					"left": 445,
+					"width": 270,
+					"height": 17,
+					"enterable": false
+				},
+				"label_Path1": {
+					"type": "text",
+					"text": "PayloadID:",
+					"top": 35,
+					"left": 375,
+					"width": 65,
 					"height": 17
 				}
 			}
 		}
 	],
-	"geometryStamp": 7
+	"geometryStamp": 166,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }

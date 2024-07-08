@@ -3,7 +3,7 @@ extern Txt KAddresses;
 extern Txt Kams;
 extern Txt Khostname;
 extern Txt Ktype;
-extern Txt k84caxgSqmhs;
+extern Txt kscmYrtv44_k;
 extern unsigned char D_proc_AMS__OPEN__REMOTEDATASTORE[];
 void proc_AMS__OPEN__REMOTEDATASTORE( Asm4d_globals *glob, tProcessGlobals *ctx, int32_t inNbExplicitParam, int32_t inNbParam, PCV inParams[], CV *outResult)
 {
@@ -25,7 +25,7 @@ void proc_AMS__OPEN__REMOTEDATASTORE( Asm4d_globals *glob, tProcessGlobals *ctx,
 			}
 _2:
 			{
-				t2=k84caxgSqmhs.get();
+				t2=kscmYrtv44_k.get();
 			}
 _3:
 			Parm<Txt>(inParams,inNbParam,1)=t2.get();

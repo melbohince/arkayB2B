@@ -1,4 +1,3 @@
-extern Txt K200_20OK;
 extern Txt KX_2DSTATUS;
 extern Txt Kpush;
 extern Txt Kresponse;
@@ -29,7 +28,7 @@ void proc_OWC__INITRESPONSEOBJECT( Asm4d_globals *glob, tProcessGlobals *ctx, in
 			l__4D__auto__mutex__0=t1.get();
 		}
 		c.f.fLine=15;
-		if (g->SetMember(ctx,Res<Obj>(outResult).cv(),Kresponse.cv(),K200_20OK.cv())) goto _0;
+		if (g->SetMember(ctx,Res<Obj>(outResult).cv(),Kresponse.cv(),Parm<Txt>(inParams,inNbParam,1).cv())) goto _0;
 		{
 			Col t2;
 			c.f.fLine=16;
@@ -55,7 +54,7 @@ void proc_OWC__INITRESPONSEOBJECT( Asm4d_globals *glob, tProcessGlobals *ctx, in
 			Variant t5;
 			c.f.fLine=19;
 			if (g->GetMember(ctx,Res<Obj>(outResult).cv(),k0M9HM5Ao3to.cv(),t5.cv())) goto _0;
-			if (g->Call(ctx,(PCV[]){nullptr,t5.cv(),Kpush.cv(),K200_20OK.cv()},3,1500)) goto _0;
+			if (g->Call(ctx,(PCV[]){nullptr,t5.cv(),Kpush.cv(),Parm<Txt>(inParams,inNbParam,1).cv()},3,1500)) goto _0;
 			g->Check(ctx);
 		}
 		{

@@ -7,15 +7,15 @@ extern Txt K441;
 extern Txt K442;
 extern Txt K443;
 extern Txt K550;
-extern Txt K551;
 extern Txt KContent_2DLength;
 extern Txt KContent_2DType;
 extern Txt KX_2DMETHOD;
 extern Txt KX_2DURL;
 extern Txt K_20;
+extern Txt KpayloadID;
 extern Txt kWFdzut0i53w;
 extern Txt kYFjx1QhOaCU;
-extern Txt kaQ$SxnkE$1o;
+Asm4d_Proc proc_INBOXSYNCTOAMS;
 Asm4d_Proc proc_OWC__SAVETOAMS;
 Asm4d_Proc proc_OWC__SAVETOINBOX;
 Asm4d_Proc proc_OWC__SETRESPONSE;
@@ -24,6 +24,7 @@ void proc_OWC__ELC__PROJECTSYMPHONY( Asm4d_globals *glob, tProcessGlobals *ctx, 
 {
 	CallChain c(ctx,D_proc_OWC__ELC__PROJECTSYMPHONY);
 	if (!ctx->doingAbort) try {
+		Txt lpayloadID__t;
 		Bool lremoteSuccess;
 		Blb lrequestBody__blob;
 		Txt lbody;
@@ -40,7 +41,7 @@ void proc_OWC__ELC__PROJECTSYMPHONY( Asm4d_globals *glob, tProcessGlobals *ctx, 
 		lXML__PARSE__FAILURE=0;
 		{
 			Variant t0;
-			c.f.fLine=22;
+			c.f.fLine=23;
 			if (g->GetMember(ctx,Parm<Obj>(inParams,inNbParam,1).cv(),KContent_2DType.cv(),t0.cv())) goto _0;
 			Bool t1;
 			if (g->OperationOnAny(ctx,7,t0.cv(),lEXPECTED__CONTENT__TYPE.cv(),t1.cv())) goto _0;
@@ -62,7 +63,7 @@ void proc_OWC__ELC__PROJECTSYMPHONY( Asm4d_globals *glob, tProcessGlobals *ctx, 
 _2:
 		{
 			Variant t5;
-			c.f.fLine=28;
+			c.f.fLine=29;
 			if (g->GetMember(ctx,Parm<Obj>(inParams,inNbParam,1).cv(),KContent_2DLength.cv(),t5.cv())) goto _0;
 			Num t6;
 			if (g->Call(ctx,(PCV[]){t6.cv(),t5.cv()},1,11)) goto _0;
@@ -71,7 +72,7 @@ _2:
 		{
 			Ref t8;
 			t8.setLocalRef(ctx,lrequestBody__blob.cv());
-			c.f.fLine=31;
+			c.f.fLine=32;
 			if (g->Call(ctx,(PCV[]){nullptr,t8.cv()},1,814)) goto _0;
 			g->Check(ctx);
 		}
@@ -79,7 +80,7 @@ _2:
 			Ref t9;
 			t9.setLocalRef(ctx,lrequestBody__blob.cv());
 			Long t10;
-			c.f.fLine=32;
+			c.f.fLine=33;
 			if (g->Call(ctx,(PCV[]){t10.cv(),t9.cv()},1,605)) goto _0;
 			lactualBodyLength=t10.get();
 		}
@@ -102,7 +103,7 @@ _3:
 			Ref t15;
 			t15.setLocalRef(ctx,lrequestBody__blob.cv());
 			Txt t16;
-			c.f.fLine=41;
+			c.f.fLine=42;
 			if (g->Call(ctx,(PCV[]){t16.cv(),t15.cv(),Long(6).cv()},2,555)) goto _0;
 			g->Check(ctx);
 			lbody=t16.get();
@@ -111,7 +112,7 @@ _3:
 			Ref t17;
 			t17.setLocalRef(ctx,lbody.cv());
 			Txt t18;
-			c.f.fLine=44;
+			c.f.fLine=45;
 			if (g->Call(ctx,(PCV[]){t18.cv(),t17.cv()},1,720)) goto _0;
 			g->Check(ctx);
 			lxmlRef__t=t18.get();
@@ -132,75 +133,80 @@ _3:
 		goto _0;
 _4:
 		{
-			Variant t23;
-			c.f.fLine=54;
-			if (g->GetMember(ctx,Parm<Obj>(inParams,inNbParam,1).cv(),KX_2DMETHOD.cv(),t23.cv())) goto _0;
-			Variant t24;
-			if (g->OperationOnAny(ctx,0,t23.cv(),K_20.cv(),t24.cv())) goto _0;
-			Variant t25;
-			if (g->GetMember(ctx,Parm<Obj>(inParams,inNbParam,1).cv(),KX_2DURL.cv(),t25.cv())) goto _0;
-			Variant t26;
-			if (g->OperationOnAny(ctx,0,t24.cv(),t25.cv(),t26.cv())) goto _0;
-			Txt t27;
-			if (!g->GetValue(ctx,(PCV[]){t27.cv(),t26.cv(),nullptr})) goto _0;
-			lpathValue=t27.get();
+			Ref t23;
+			t23.setLocalRef(ctx,lpayloadID__t.cv());
+			c.f.fLine=51;
+			if (g->Call(ctx,(PCV[]){nullptr,lxmlRef__t.cv(),KpayloadID.cv(),t23.cv()},3,728)) goto _0;
+			g->Check(ctx);
 		}
 		{
-			Ptr t28;
-			t28.adopt(g->CreatePointerLocal(ctx,lbody.cv(),-1,-1));
-			Txt t29;
-			t29=lpathValue.get();
-			Long t30;
-			c.f.fLine=55;
-			proc_OWC__SAVETOINBOX(glob,ctx,2,2,(PCV[]){t29.cv(),t28.cv()},t30.cv());
+			Variant t24;
+			c.f.fLine=56;
+			if (g->GetMember(ctx,Parm<Obj>(inParams,inNbParam,1).cv(),KX_2DMETHOD.cv(),t24.cv())) goto _0;
+			Variant t25;
+			if (g->OperationOnAny(ctx,0,t24.cv(),K_20.cv(),t25.cv())) goto _0;
+			Variant t26;
+			if (g->GetMember(ctx,Parm<Obj>(inParams,inNbParam,1).cv(),KX_2DURL.cv(),t26.cv())) goto _0;
+			Variant t27;
+			if (g->OperationOnAny(ctx,0,t25.cv(),t26.cv(),t27.cv())) goto _0;
+			Txt t28;
+			if (!g->GetValue(ctx,(PCV[]){t28.cv(),t27.cv(),nullptr})) goto _0;
+			lpathValue=t28.get();
+		}
+		{
+			Ptr t29;
+			t29.adopt(g->CreatePointerLocal(ctx,lbody.cv(),-1,-1));
+			Txt t30;
+			t30=lpayloadID__t.get();
+			Txt t31;
+			t31=lpathValue.get();
+			Long t32;
+			c.f.fLine=57;
+			proc_OWC__SAVETOINBOX(glob,ctx,3,3,(PCV[]){t31.cv(),t30.cv(),t29.cv()},t32.cv());
 			if (ctx->checkPendingErrors) g->CheckErr(ctx,0);
 			if (ctx->doingAbort) goto _0;
-			linbox__pkid=t30.get();
+			linbox__pkid=t32.get();
 		}
 		if (0>=linbox__pkid.get()) goto _5;
 		{
-			Long t32;
-			t32=linbox__pkid.get();
-			Bool t33;
-			c.f.fLine=58;
-			proc_OWC__SAVETOAMS(glob,ctx,1,1,(PCV[]){t32.cv()},t33.cv());
+			Obj t34;
+			Long t35;
+			t35=linbox__pkid.get();
+			Bool t36;
+			c.f.fLine=60;
+			proc_OWC__SAVETOAMS(glob,ctx,1,2,(PCV[]){t35.cv(),t34.cv()},t36.cv());
 			if (ctx->checkPendingErrors) g->CheckErr(ctx,0);
 			if (ctx->doingAbort) goto _0;
-			lremoteSuccess=t33.get();
+			lremoteSuccess=t36.get();
 		}
 		{
-			Bool t34;
-			t34=lremoteSuccess.get();
-			Bool t35;
-			t35=!(t34.get());
-			if (!(t35.get())) goto _6;
+			Bool t37;
+			t37=lremoteSuccess.get();
+			Bool t38;
+			t38=!(t37.get());
+			if (!(t38.get())) goto _6;
 		}
 		{
-			Txt t36;
-			t36=kaQ$SxnkE$1o.get();
-			Txt t37;
-			t37=K551.get();
-			Txt t38;
-			c.f.fLine=61;
-			proc_OWC__SETRESPONSE(glob,ctx,2,2,(PCV[]){t37.cv(),t36.cv()},t38.cv());
+			Bool t39;
+			c.f.fLine=64;
+			proc_INBOXSYNCTOAMS(glob,ctx,0,0,nullptr,t39.cv());
 			if (ctx->checkPendingErrors) g->CheckErr(ctx,0);
 			if (ctx->doingAbort) goto _0;
-			Res<Txt>(outResult)=t38.get();
 		}
 _6:
 		goto _7;
 _5:
 		{
-			Txt t39;
-			t39=kWFdzut0i53w.get();
 			Txt t40;
-			t40=K550.get();
+			t40=kWFdzut0i53w.get();
 			Txt t41;
-			c.f.fLine=65;
-			proc_OWC__SETRESPONSE(glob,ctx,2,2,(PCV[]){t40.cv(),t39.cv()},t41.cv());
+			t41=K550.get();
+			Txt t42;
+			c.f.fLine=68;
+			proc_OWC__SETRESPONSE(glob,ctx,2,2,(PCV[]){t41.cv(),t40.cv()},t42.cv());
 			if (ctx->checkPendingErrors) g->CheckErr(ctx,0);
 			if (ctx->doingAbort) goto _0;
-			Res<Txt>(outResult)=t41.get();
+			Res<Txt>(outResult)=t42.get();
 		}
 _7:
 _0:

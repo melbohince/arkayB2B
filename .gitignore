@@ -5,7 +5,7 @@
 # Components/
 
 # Derived data
-Project/DerivedData/
+DerivedData/
 
 # Libraries, the apple silicon obj file lib4d-arm64.dylib too large
 Libraries/
@@ -24,9 +24,7 @@ Resources/php.ini
 Settings/*
 
 # User preferences
-userPreferences/
 userPreferences.*/
-userPreferences.MelvinBohince/
 
 # Built application
 *.4DZ
@@ -37,14 +35,9 @@ _backups/
 _logfile/
 
 
-# web the screencasts are too large for github
-web/training/**/*.mov
-web/training/**/*.mp4
-web/training/**/*.webm
-
 
 # Uncomment (remove the following # ) to ignore Trash
-# Project/Trash
+ Project/Trash
 
 # System files
 .DS_Store
