@@ -2,26 +2,10 @@
 	"editors": [
 		{
 			"type": "method",
-			"id": 2147483631,
+			"id": 2147483630,
 			"codeDescriptor": {
 				"type": 5,
 				"databaseMethod": 8
-			}
-		},
-		{
-			"type": "method",
-			"id": 2147483636,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "OWA_checkUserCredentials"
-			}
-		},
-		{
-			"type": "method",
-			"id": 2147483645,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "OWA_checkClientWhiteList"
 			}
 		},
 		{
@@ -34,7 +18,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483630,
+			"id": 2147483631,
 			"codeDescriptor": {
 				"type": 5,
 				"databaseMethod": 6
@@ -42,18 +26,18 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483646,
+			"id": 2147483636,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "InboxSyncToAMS"
+				"methodName": "OWA_checkUserCredentials"
 			}
 		},
 		{
 			"type": "method",
-			"id": 2147483638,
+			"id": 2147483634,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "OWC_saveToAMS"
+				"methodName": "OWC_initResponseObject"
 			}
 		},
 		{

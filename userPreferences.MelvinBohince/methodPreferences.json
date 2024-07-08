@@ -1,30 +1,30 @@
 {
 	"Sources/DatabaseMethods/onWebAuthentication.4dm": {
-		"startSelection": 16,
-		"endSelection": 40,
-		"firstSelectedLine": 41,
-		"lastSelectedLine": 41,
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 61,
+		"lastSelectedLine": 61,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-06T14:34:40.434Z"
+		"stamp": "2024-07-08T17:56:33.518Z"
 	},
 	"Sources/DatabaseMethods/onWebConnection.4dm": {
 		"startSelection": 11,
 		"endSelection": 34,
-		"firstSelectedLine": 35,
-		"lastSelectedLine": 35,
+		"firstSelectedLine": 29,
+		"lastSelectedLine": 29,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-06T14:34:40.423Z"
+		"stamp": "2024-07-08T17:37:06.080Z"
 	},
 	"Sources/Methods/OWC_ELC_ProjectSymphony.4dm": {
-		"startSelection": 0,
-		"endSelection": 14,
-		"firstSelectedLine": 63,
-		"lastSelectedLine": 63,
+		"startSelection": 56,
+		"endSelection": 0,
+		"firstSelectedLine": 23,
+		"lastSelectedLine": 23,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-07T00:16:36.548Z"
+		"stamp": "2024-07-08T17:19:52.903Z"
 	},
 	"Sources/Methods/OWA_checkClientWhiteList.4dm": {
 		"startSelection": 26,
@@ -36,13 +36,13 @@
 		"stamp": "2024-07-06T14:15:02.552Z"
 	},
 	"Sources/Methods/OWA_checkUserCredentials.4dm": {
-		"startSelection": 15,
-		"endSelection": 29,
-		"firstSelectedLine": 50,
-		"lastSelectedLine": 50,
+		"startSelection": 21,
+		"endSelection": 37,
+		"firstSelectedLine": 31,
+		"lastSelectedLine": 31,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-06T14:14:53.150Z"
+		"stamp": "2024-07-08T17:37:06.085Z"
 	},
 	"Trash/Methods/(old_footprints_OWC).4dm": {
 		"startSelection": 0,
@@ -54,10 +54,10 @@
 		"stamp": "2024-07-05T03:48:24.705Z"
 	},
 	"Sources/Methods/OWC_initResponseObject.4dm": {
-		"startSelection": 0,
+		"startSelection": 8,
 		"endSelection": 0,
-		"firstSelectedLine": 0,
-		"lastSelectedLine": 0,
+		"firstSelectedLine": 23,
+		"lastSelectedLine": 21,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2024-07-06T12:07:04.102Z"
@@ -65,11 +65,11 @@
 	"Sources/Methods/OWC_initHeaderObject.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 0,
-		"lastSelectedLine": 0,
+		"firstSelectedLine": 38,
+		"lastSelectedLine": 38,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-06T12:07:04.102Z"
+		"stamp": "2024-07-08T17:31:25.947Z"
 	},
 	"Sources/Methods/OWC_sendResponse.4dm": {
 		"startSelection": 0,
@@ -81,13 +81,13 @@
 		"stamp": "2024-07-06T11:50:55.630Z"
 	},
 	"Sources/Methods/OWC_setResponse.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 24,
-		"lastSelectedLine": 24,
+		"startSelection": 9,
+		"endSelection": 9,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 9,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-05T18:57:11.288Z"
+		"stamp": "2024-07-08T17:11:10.174Z"
 	},
 	"Sources/Methods/aMs_Open_RemoteDataStore.4dm": {
 		"startSelection": 44,
