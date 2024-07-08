@@ -6,6 +6,7 @@
 
 # Derived data
 DerivedData/
+Project/DerivedData/
 
 # Libraries, the apple silicon obj file lib4d-arm64.dylib too large
 Libraries/
@@ -25,6 +26,7 @@ Settings/*
 
 # User preferences
 userPreferences.*/
+userPreferences.MelvinBohince/
 
 # Built application
 *.4DZ
