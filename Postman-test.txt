@@ -1,0 +1,34 @@
+Postman test
+ 
+POST http://mlb.local:8080/ELCAriba/
+202
+2 m 21.25 s
+Network
+addresses: {…}
+local: {…}
+remote: {…}
+Request Headers
+Content-Type: text/xml; charset=UTF-8
+Authorization: Basic RUxDIEFyaWJhIFVzZXI6eHh4
+User-Agent: PostmanRuntime/7.39.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 83dd2e6e-17bc-47a6-afd5-0468d222d46d
+Host: mlb.local:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 15466
+Request Body
+Body is more than 10 KB and can only be viewed in editor. 
+
+Response Headers
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Length: 12
+Content-Type: text/html; charset=UTF-8
+Date: Mon, 08 Jul 2024 18:02:16 GMT
+Expires: Mon, 08 Jul 2024 18:02:14 GMT
+Server: 4D/19.5.0
+Set-Cookie: 4DSID_ArkayB2B=6D6CBCC994EE49D48BA29735F68E0E0F; Path=/; Max-Age=28800; SameSite=Strict; HttpOnly; Version=1
+Response Body
+202 Accepted
