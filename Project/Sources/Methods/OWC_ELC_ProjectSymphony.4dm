@@ -16,14 +16,14 @@ var $body; $EXPECTED_CONTENT_TYPE; $xmlRef_t; $payloadID_t : Text
 var $expectedBodyLength_i; $actualBodyLength; $XML_PARSE_FAILURE : Integer
 var $requestBody_blob : Blob
 
-$result_t:="200 OK"
+$result_t:="202 Accepted"  // see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 $EXPECTED_CONTENT_TYPE:="text/xml; charset=UTF-8"  //being picky
 $XML_PARSE_FAILURE:=0
 
 //mark:-Test Content-Type
 If ($header_o["Content-Type"]#$EXPECTED_CONTENT_TYPE)
-	$result_t:=OWC_setResponse("441"; "401 Bad Request")
-	return 
+	$result_t:=OWC_setResponse("415 Unsupported Media Type")
+	return $result_t
 End if 
 
 //mark:-Test Content-Length
@@ -34,8 +34,8 @@ WEB GET HTTP BODY:C814($requestBody_blob)
 $actualBodyLength:=BLOB size:C605($requestBody_blob)
 
 If ($actualBodyLength#$expectedBodyLength_i)
-	$result_t:=OWC_setResponse("442"; "402 Bad Request")
-	return 
+	$result_t:=OWC_setResponse("411 Length Required")
+	return $result_t
 End if 
 
 //mark:-Test Parse XML
@@ -45,8 +45,8 @@ $body:=BLOB to text:C555($requestBody_blob; UTF8 text without length:K22:17)
 //ON ERR CALL("e_XML_Problem")
 $xmlRef_t:=DOM Parse XML variable:C720($body)
 If (ok=0)  //& (error#0) 
-	$result_t:=OWC_setResponse("443"; "403 Bad Request")
-	return 
+	$result_t:=OWC_setResponse("422 Unprocessable Content")
+	return $result_t
 End if 
 
 DOM GET XML ATTRIBUTE BY NAME:C728($xmlRef_t; "payloadID"; $payloadID_t)
@@ -66,6 +66,7 @@ If ($inbox_pkid>0)
 	End if 
 	
 Else 
-	$result_t:=OWC_setResponse("550"; "550 Internal Error")
+	$result_t:=OWC_setResponse("500 Internal Server Error")
 End if 
 
+return $result_t  //default is "202 Accepted", or last error of 500

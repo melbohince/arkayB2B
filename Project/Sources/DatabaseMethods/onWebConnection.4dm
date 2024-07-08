@@ -35,8 +35,10 @@ Case of
 		//pass the headers to a specific strategy
 		$result_t:=OWC_ELC_ProjectSymphony($header_o)
 		
-		$response:=OWC_sendResponse
+		$result_t:=OWC_sendResponse
 		
 	Else   //shame on you for probing, endpoint and method not defined
 		//log and respond with 404 or fail silently
+		$result_t:=OWC_setResponse("405 Method Not Allowed")
+		$result_t:=OWC_sendResponse
 End case 
