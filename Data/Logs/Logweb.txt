@@ -25,3 +25,22 @@
 #Fields: c-ip rfc-931 user date time http-request sc-status bytes_sent
 10.0.0.1 - - [08/Jul/2024:15:18:59 -429496729200] "GET / HTTP/1.1" 200 11
 10.0.0.1 - - [08/Jul/2024:15:50:29 -429496729200] "GET / HTTP/1.1" 200 11
+#Version: 1.0
+#Software: 4D/19.5.0
+#Date: 2024-07-08 14:02:16
+#Remark: format CLF
+#Fields: c-ip rfc-931 user date time http-request sc-status bytes_sent
+127.0.0.1 - ELC Ariba User [08/Jul/2024:18:02:16 -429496729200] "POST /ELCAriba/ HTTP/1.1" 202 12
+10.0.0.1 - - [08/Jul/2024:18:25:03 -429496729200] "GET / HTTP/1.1" 200 11
+127.0.0.1 - ELC Ariba User [08/Jul/2024:18:31:24 -429496729200] "POST /ELCAriba/ HTTP/1.1" 202 12
+127.0.0.1 - ELC Ariba User [08/Jul/2024:18:31:34 -429496729200] "POST /ELCAriba/ HTTP/1.1" 202 12
+#Version: 1.0
+#Software: 4D/19.5.0
+#Date: 2024-07-08 19:13:14
+#Remark: format CLF
+#Fields: c-ip rfc-931 user date time http-request sc-status bytes_sent
+127.0.0.1 - ELC Ariba User [08/Jul/2024:23:13:14 -429496729200] "GET /ELCAriba/ HTTP/1.1" 405 22
+127.0.0.1 - ELC Ariba User [08/Jul/2024:23:17:50 -429496729200] "POST /ELCAriba/ HTTP/1.1" 411 19
+127.0.0.1 - ELC Ariba User [08/Jul/2024:23:30:21 -429496729200] "POST /ELCAriba/ HTTP/1.1" 202 12
+127.0.0.1 - ELC Ariba User [08/Jul/2024:23:33:02 -429496729200] "POST /ELCAriba/ HTTP/1.1" 411 19
+127.0.0.1 - ELC Ariba User [08/Jul/2024:23:34:49 -429496729200] "POST /ELCAriba/ HTTP/1.1" 202 12

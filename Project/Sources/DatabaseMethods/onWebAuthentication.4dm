@@ -16,6 +16,11 @@
 
 */
 
+/*
+tested from terminal with:
+ curl -X POST -u "ELC Ariba User":xxx -H "Content-Type:text/xml; charset=UTF-8" -H "Content-Length:15466" --data-binary @/Users/mel/Desktop/00-elc-samples/00-cXML_PO_elc.txt  http://127.0.0.1:8080/ELCAriba/   
+*/
+
 // from https://developer.4d.com/docs/WebServer/authentication#on-web-authentication
 #DECLARE($url : Text; $header : Text; \
 $ipClient : Text; $ipServer : Text; \

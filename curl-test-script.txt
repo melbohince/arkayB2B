@@ -1,0 +1,4 @@
+paste into terminal on one line; assumes an xml document of size 15466 is in here: /Users/mel/Desktop/00-elc-samples/00-cXML_PO_elc.txt
+
+
+curl -X POST -u "ELC Ariba User":xxx -H "Content-Type:text/xml; charset=UTF-8" -H "Content-Length:15466" --data-binary @/Users/mel/Desktop/00-elc-samples/00-cXML_PO_elc.txt  http://127.0.0.1:8080/ELCAriba/
