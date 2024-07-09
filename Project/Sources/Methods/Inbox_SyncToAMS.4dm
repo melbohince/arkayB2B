@@ -1,6 +1,6 @@
 //%attributes = {}
 /*
- Method: InboxSyncToAMS   ( ) ->
+ Method: Inbox_SyncToAMS   ( ) ->
  By: MelvinBohince @ 07/06/24, 10:21:35
  Description:
   second try for messages saved locally but
@@ -32,5 +32,5 @@ If ($ams_ds=Null:C1517)
 End if 
 
 For each ($inbox_e; $inbox_es)  //...tryto save to AMS
-	$remoteSuccess:=OWC_saveToAMS($inbox_e.ID; $ams_ds)
+	$remoteSuccess:=AMS_SaveInboxMsg($inbox_e.ID; $ams_ds)
 End for each 

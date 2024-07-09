@@ -1,6 +1,6 @@
 //%attributes = {}
 /*
- Method: OWC_saveToAMS   ( ) ->
+ Method: AMS_SaveInboxMsg   ( ) ->
  By: MelvinBohince @ 07/05/24, 21:10:04
  Description:
   

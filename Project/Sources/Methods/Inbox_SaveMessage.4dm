@@ -1,6 +1,6 @@
 //%attributes = {}
 /*
- Method: OWC_saveToInbox   ( ) ->
+ Method: Inbox_SaveMessage   ( ) ->
  By: MelvinBohince @ 07/05/24, 21:03:20
  Description:
   Save http web body locally

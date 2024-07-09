@@ -31,6 +31,21 @@ Case of
 		
 		$result_t:=OWC_sendResponse
 		
+	: (Session:C1714.storage.header_o["X-URL"]="/ELCAriba/") && (Session:C1714.storage.header_o["X-METHOD"]="GET")  //for the OCD
+		
+		$recentMessages_json:=Inbox_RecentMessages(3)
+		
+		If (Length:C16($recentMessages_json)=0)
+			$result_t:=OWC_setResponse("404 Not Found")
+			$result_t:=OWC_sendResponse
+		End if 
+		
+		//send it
+		WEB SEND TEXT:C677($recentMessages_json; "application/json")
+		
+		//$result_t:=OWC_sendResponse
+		
+		
 	Else   //shame on you for probing, endpoint and method not defined
 		//log and respond with 404 or fail silently
 		$result_t:=OWC_setResponse("405 Method Not Allowed")

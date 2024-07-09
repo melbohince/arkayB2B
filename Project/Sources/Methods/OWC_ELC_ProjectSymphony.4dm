@@ -55,14 +55,14 @@ DOM GET XML ATTRIBUTE BY NAME:C728($xmlRef_t; "payloadID"; $payloadID_t)
 
 //save body locally
 $pathValue:=$header_o["X-METHOD"]+" "+$header_o["X-URL"]
-$inbox_pkid:=OWC_saveToInbox($pathValue; $payloadID_t; ->$body)
+$inbox_pkid:=Inbox_SaveMessage($pathValue; $payloadID_t; ->$body)
 
 If ($inbox_pkid>0)
-	$remoteSuccess:=OWC_saveToAMS($inbox_pkid)
+	$remoteSuccess:=AMS_SaveInboxMsg($inbox_pkid)
 	
 	If (Not:C34($remoteSuccess))  //no worries, will get it later
 		//todo:set up a worker
-		InboxSyncToAMS
+		Inbox_SyncToAMS
 	End if 
 	
 Else 
