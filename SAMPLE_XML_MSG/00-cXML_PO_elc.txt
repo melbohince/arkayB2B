@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.2.056/cXML.dtd">
+<cXML payloadID="005056B3EC831EEDB1E7EFC1BAD0116D" timestamp="2023-03-20T23:59:59+00:00" version="1.2.056">
+   <Header>¬†
+      <From>
+         <Credential domain="NetworkID">
+            <Identity>AN01008207347-T</Identity>
+         </Credential>
+         <Credential domain="SystemID">
+            <Identity>ECQCLNT100</Identity>
+         </Credential>
+      </From>
+      <To>
+         <Credential domain="NetworkID">
+            <Identity>AN01000000001-T</Identity>
+         </Credential>
+         <Correspondent>
+            <Contact role="correspondent">
+               <Name xml:lang="EN">Supplier Name</Name>
+               <PostalAddress>
+                  <Street>Street</Street>
+                  <City>City</City>
+                  <Country isoCountryCode="US">United States of America</Country>
+               </PostalAddress>
+               <Email name="routing">name@email.com</Email>
+               <Fax name="">
+                  <TelephoneNumber>
+                     <CountryCode isoCountryCode="US">1</CountryCode>
+                     <AreaOrCityCode/>
+                     <Number>1234</Number>
+                  </TelephoneNumber>
+               </Fax>
+            </Contact>
+         </Correspondent>
+      </To>
+      <Sender>
+         <Credential domain="NetworkID">
+            <Identity>AN01008207347-T</Identity>
+         </Credential>
+         <UserAgent>Ariba Supplier</UserAgent>
+      </Sender>
+   </Header>
+   <Request deploymentMode="test">
+      <OrderRequest>
+         <OrderRequestHeader agreementID="4600401845" orderDate="2023-03-20T12:00:00+00:00" orderID="4502695584" orderType="regular" orderVersion="1" type="new">
+            <Total>
+               <Money currency="USD">2.23</Money>
+            </Total>
+            <ShipTo>
+               <Address addressID="8888" addressIDDomain="buyerLocationID" isoCountryCode="US">
+                  <Name xml:lang="EN">ShipTo Name</Name>
+                  <PostalAddress name="default">
+                     <Street>Street</Street>
+                     <City>City</City>
+                     <Municipality>Municipality</Municipality>
+                     <State>State</State>
+                     <PostalCode>08817</PostalCode>
+                     <Country isoCountryCode="US"/>
+                  </PostalAddress>
+                  <Email name="default" preferredLang="en">name@email.com</Email>
+                  <Phone>
+                     <TelephoneNumber>
+                        <CountryCode isoCountryCode="US">1</CountryCode>
+                        <AreaOrCityCode/>
+                        <Number>1234</Number>
+                        <Extension>154</Extension>
+                     </TelephoneNumber>
+                  </Phone>
+                  <Fax>
+                     <TelephoneNumber>
+                        <CountryCode isoCountryCode="US">1</CountryCode>
+                        <AreaOrCityCode/>
+                        <Number>1234</Number>
+                     </TelephoneNumber>
+                  </Fax>
+               </Address>
+               <IdReference domain="buyerLocationID" identifier="8888"/>
+               <IdReference domain="storageLocationID" identifier="XFER"/>
+            </ShipTo>
+            <BillTo>
+               <Address addressID="9999" isoCountryCode="US">
+                  <Name xml:lang="EN">BillTo Name</Name>
+                  <PostalAddress>
+                     <Street>Street</Street>
+                     <City>City</City>
+                     <Municipality>Municipality</Municipality>
+                     <State>State</State>
+                     <PostalCode>11747</PostalCode>
+                     <Country isoCountryCode="US"/>
+                  </PostalAddress>
+                  <Phone>
+                     <TelephoneNumber>
+                        <CountryCode isoCountryCode="US">1</CountryCode>
+                        <AreaOrCityCode/>
+                        <Number>1234</Number>
+                     </TelephoneNumber>
+                  </Phone>
+                  <Fax>
+                     <TelephoneNumber>
+                        <CountryCode isoCountryCode="US">1</CountryCode>
+                        <AreaOrCityCode/>
+                        <Number>1234</Number>
+                     </TelephoneNumber>
+                  </Fax>
+               </Address>
+               <IdReference domain="buyerID" identifier="9999"/>
+            </BillTo>
+            <BusinessPartner role="soldTo" type="organization">
+               <Address addressID="EL01" addressIDDomain="buyerAccountID" isoCountryCode="US">
+                  <Name xml:lang="EN">soldTo Name</Name>
+                  <PostalAddress>
+                     <Street>Street</Street>
+                     <City>City</City>
+                     <Municipality>Municipality</Municipality>
+                     <State>State</State>
+                     <PostalCode>11747</PostalCode>
+                     <Country isoCountryCode="US"/>
+                  </PostalAddress>
+                  <Phone>
+                     <TelephoneNumber>
+                        <CountryCode isoCountryCode="US">1</CountryCode>
+                        <AreaOrCityCode/>
+                        <Number>1234</Number>
+                     </TelephoneNumber>
+                  </Phone>
+                  <Fax>
+                     <TelephoneNumber>
+                        <CountryCode isoCountryCode="US">1</CountryCode>
+                        <AreaOrCityCode/>
+                        <Number>1234</Number>
+                     </TelephoneNumber>
+                  </Fax>
+               </Address>
+               <IdReference domain="buyerAccountID" identifier="EL01"/>
+            </BusinessPartner>
+            <LegalEntity>
+               <IdReference domain="CompanyCode" identifier="9999">
+                  <Description xml:lang="EN-US">Company Code</Description>
+               </IdReference>
+            </LegalEntity>
+            <OrganizationalUnit>
+               <IdReference domain="PurchasingOrganization" identifier="EL01">
+                  <Description xml:lang="EN-US">Purchasing Organization</Description>
+               </IdReference>
+            </OrganizationalUnit>
+            <OrganizationalUnit>
+               <IdReference domain="PurchasingGroup" identifier="0X">
+                  <Description xml:lang="EN-US">Purchasing Group</Description>
+               </IdReference>
+            </OrganizationalUnit>
+            <PaymentTerm payInNumberOfDays="90">
+               <Discount>
+                  <DiscountPercent percent="0.000"/>
+               </Discount>
+            </PaymentTerm>
+            <Contact addressID="10007777" addressIDDomain="buyerID" role="supplierCorporate">
+               <Name xml:lang="EN">Supplier Name</Name>
+               <PostalAddress>
+                  <Street>Street</Street>
+                  <City>City</City>
+                  <Municipality>Municipality</Municipality>
+                  <State>State</State>
+                  <PostalCode>78521</PostalCode>
+                  <Country isoCountryCode="US"/>
+               </PostalAddress>
+               <Email name="default">name@email.com</Email>
+               <Phone>
+                  <TelephoneNumber>
+                     <CountryCode isoCountryCode="US">1</CountryCode>
+                     <AreaOrCityCode/>
+                     <Number>1234</Number>
+                  </TelephoneNumber>
+               </Phone>
+               <Fax>
+                  <TelephoneNumber>
+                     <CountryCode isoCountryCode="US">1</CountryCode>
+                     <AreaOrCityCode/>
+                     <Number>1234</Number>
+                  </TelephoneNumber>
+               </Fax>
+               <IdReference domain="buyerID" identifier="10007777"/>
+            </Contact>
+            <SupplierOrderInfo orderID="N/A"/>
+            <TermsOfDelivery>
+               <TermsOfDeliveryCode value="TransportCondition"/>
+               <ShippingPaymentMethod value="Other"/>
+               <TransportTerms value="FOB">Free on board</TransportTerms>
+               <Address>
+                  <Name xml:lang="EN">Address Name</Name>
+               </Address>
+            </TermsOfDelivery>
+            <OrderRequestHeaderIndustry>
+               <ReferenceDocumentInfo>
+                  <DocumentInfo documentID="N/A" documentType="ReplenishmentOrder"/>
+               </ReferenceDocumentInfo>
+               <ExternalDocumentType documentType="ZNB">
+                  <Description xml:lang="EN-US">Standard PO</Description>
+               </ExternalDocumentType>
+            </OrderRequestHeaderIndustry>
+            <Extrinsic name="CompanyCode">9999</Extrinsic>
+            <Extrinsic name="PurchaseGroup">PurchaseGroup</Extrinsic>
+            <Extrinsic name="PurchaseOrganization">PurchaseOrganization</Extrinsic>
+            <Extrinsic name="Requester"/>
+            <Extrinsic name="Ariba.invoicingAllowed">Yes</Extrinsic>
+            <Extrinsic name="Ariba.availableAmount">2.23</Extrinsic>
+            <Extrinsic name="partyAdditionalID">10007777</Extrinsic>
+            <Extrinsic name="AribaNetwork.PaymentTermsExplanation">Within 90 days due net</Extrinsic>
+            <Extrinsic name="Demo">Demo</Extrinsic>
+         </OrderRequestHeader>
+         <ItemOut quantity="20.000" requestedDeliveryDate="2023-04-10T12:00:00+00:00" lineNumber="10" agreementItemNumber="00020">
+            <ItemID>
+               <SupplierPartID/>
+               <BuyerPartID>BuyPartID1111</BuyerPartID>
+            </ItemID>
+            <ItemDetail>
+               <UnitPrice>
+                  <Money currency="USD">111.72</Money>
+               </UnitPrice>
+               <Description xml:lang="EN-US">Description</Description>
+               <UnitOfMeasure>EA</UnitOfMeasure>
+               <PriceBasisQuantity quantity="1000" conversionFactor="1">
+                  <UnitOfMeasure>EA</UnitOfMeasure>
+               </PriceBasisQuantity>
+               <Classification domain="ERPCommodityCode">10111111</Classification>
+               <Classification domain="ERPCommodityCodeDescription">CC Description</Classification>
+               <PlannedAcceptanceDays>4</PlannedAcceptanceDays>
+               <Extrinsic name="ReceivingType"/>
+               <Extrinsic name="extLineNumber">10</Extrinsic>
+            </ItemDetail>
+            <Contact role="BuyerPlannerCode">
+               <Name xml:lang="EN">Buyer Planner Name</Name>
+               <IdReference identifier="55" domain="BuyerPlannerCode">
+                  <Description xml:lang="EN">Description</Description>
+               </IdReference>
+            </Contact>
+            <ControlKeys>
+               <OCInstruction value="requiredBeforeASN">
+                  <Lower>
+                     <Tolerances>
+                        <QuantityTolerance>
+                           <Percentage percent="1.0"/>
+                        </QuantityTolerance>
+                        <TimeTolerance limit="999" type="days"/>
+                     </Tolerances>
+                  </Lower>
+                  <Upper>
+                     <Tolerances>
+                        <QuantityTolerance>
+                           <Percentage percent="3.0"/>
+                        </QuantityTolerance>
+                        <TimeTolerance limit="999" type="days"/>
+                     </Tolerances>
+                  </Upper>
+               </OCInstruction>
+               <ASNInstruction value="allowed">
+                  <Lower>
+                     <Tolerances>
+                        <QuantityTolerance>
+                           <Percentage percent="1.0"/>
+                        </QuantityTolerance>
+                        <TimeTolerance limit="999" type="days"/>
+                     </Tolerances>
+                  </Lower>
+                  <Upper>
+                     <Tolerances>
+                        <QuantityTolerance>
+                           <Percentage percent="3.0"/>
+                        </QuantityTolerance>
+                        <TimeTolerance limit="999" type="days"/>
+                     </Tolerances>
+                  </Upper>
+               </ASNInstruction>
+               <InvoiceInstruction verificationType="goodsReceipt" value="isNotERS"/>
+            </ControlKeys>
+            <ScheduleLine quantity="20.000" requestedDeliveryDate="2023-04-10T12:00:00+00:00" lineNumber="1">
+               <UnitOfMeasure>EA</UnitOfMeasure>
+            </ScheduleLine>
+            <MasterAgreementIDInfo agreementID="4600401845"/>
+            <ItemOutIndustry>
+               <QualityInfo requiresQualityProcess="yes">
+                  <IdReference identifier="Z007" domain="controlCode"/>
+                  <IdReference identifier="invoice block" domain="controlCodeDesc"/>
+               </QualityInfo>
+               <BatchInfo requiresBatch="yes"/>
+            </ItemOutIndustry>
+         </ItemOut>
+      </OrderRequest>
+   </Request>
+</cXML>
