@@ -4,18 +4,18 @@
 //see (P) TS2DateTime for conversion back
 //this will fail in May of 2063, wont be my problem
 
-#DECLARE($date : Date; $time : Time)->$timestamp_i
+#DECLARE($date : Date; $time : Time)->$timestamp_i : Integer
 
-var $pc : Integer
+var $parameterCount : Integer
 
-$pc:=Count parameters:C259
+$parameterCount:=Count parameters:C259
 
 Case of 
-	: ($pc=0)
+	: ($parameterCount=0)
 		$date:=Current date:C33
 		$time:=Current time:C178
 		
-	: ($pc=1)
+	: ($parameterCount=1)
 		If ($date=!00-00-00!)
 			$date:=!1995-04-17!  // my date of hire
 		Else 
@@ -23,7 +23,7 @@ Case of
 		End if 
 		$time:=Current time:C178
 		
-	: ($pc=2)
+	: ($parameterCount=2)
 		If ($date=!00-00-00!)
 			$date:=!1995-04-17!
 		End if 

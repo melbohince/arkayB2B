@@ -12,13 +12,16 @@
 
 #DECLARE($header_o : Object)->$result_t : Text
 
-var $body; $EXPECTED_CONTENT_TYPE; $xmlRef_t; $payloadID_t : Text
-var $expectedBodyLength_i; $actualBodyLength; $XML_PARSE_FAILURE : Integer
+var $body; $xmlRef_t; $payloadID_t : Text
+var $expectedBodyLength_i; $actualBodyLength : Integer
 var $requestBody_blob : Blob
+var $remoteSuccess : Boolean
+var $inbox_pkid : Integer
+var $XML_PARSE_FAILURE : Integer:=0
+var $EXPECTED_CONTENT_TYPE : Text:="text/xml; charset=UTF-8"  //being picky
 
 $result_t:="202 Accepted"  // see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
-$EXPECTED_CONTENT_TYPE:="text/xml; charset=UTF-8"  //being picky
-$XML_PARSE_FAILURE:=0
+
 
 //mark:-Test Content-Type
 If ($header_o["Content-Type"]#$EXPECTED_CONTENT_TYPE)
@@ -44,7 +47,7 @@ $body:=BLOB to text:C555($requestBody_blob; UTF8 text without length:K22:17)
 
 //ON ERR CALL("e_XML_Problem")
 $xmlRef_t:=DOM Parse XML variable:C720($body)
-If (ok=0)  //& (error#0) 
+If (ok=$XML_PARSE_FAILURE)  //& (error#0) 
 	$result_t:=OWC_setResponse("422 Unprocessable Content")
 	return $result_t
 End if 

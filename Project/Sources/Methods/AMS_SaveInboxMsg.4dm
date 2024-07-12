@@ -9,13 +9,13 @@
   
 */
 
-#DECLARE($inbox_pkid; $ams_ds : Object)->$success : Boolean  //$ams_ds : cs.DataStore gives compiler warning
+#DECLARE($inbox_pkid : Integer; $ams_ds : Object)->$success : Boolean  //$ams_ds : cs.DataStore gives compiler warning
 
 var $TESTING : Boolean
 var $NEEDS_MAPPED : Integer
 var $local_e : cs:C1710.Web_InboxEntity
 var $status_o : Object
-var $ams_e : 4D:C1709.Entity
+var $ams_e : Object  //of ams type cs.edi_InboxEntity
 
 $success:=False:C215
 

@@ -12,13 +12,8 @@
 $AMS_REST_ADDRESS:=(Count parameters:C259=1) ? $AMS_REST_ADDRESS : "192.168.1.72:8080"  //production
 //$AMS_REST_ADDRESS:="10.0.0.152:8080"  //home network
 
-var $connectTo : Object
-var $localId : Text
-
-$connectTo:=New object:C1471("type"; "4D Server"; "hostname"; $AMS_REST_ADDRESS)
-//$connectTo:=New object("type"; "4D Server"; "hostname"; WMS_TEST_SERVER_URL)  //"10.0.0.152:8080")
-
-$localId:="ams"
+var $connectTo : Object:=New object:C1471("type"; "4D Server"; "hostname"; $AMS_REST_ADDRESS)
+var $localId : Text:="ams"
 
 //ON ERR CALL("e_file_io_error")
 

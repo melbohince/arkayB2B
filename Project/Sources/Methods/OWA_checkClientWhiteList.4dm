@@ -15,14 +15,16 @@
 
 var $tradingPartner_e : cs:C1710.Trading_PartnersEntity
 var $allowedClientIPs_c : Collection  //white list of ip's
-var $NOT_FOUND : Integer
+var $NOT_FOUND : Integer:=-1
+var $PERMITTED : Boolean:=True:C214
+var $DENIED : Boolean:=False:C215
 
 If (Count parameters:C259=0)  //testing
 	$ipClient:="1.1.1.1"  //fails
 	$endPointRequested:="ELCAriba"
 End if 
 
-$accessGranted:=True:C214
+$accessGranted:=$PERMITTED
 
 //see if client's IP has been registered for this endpoint
 $tradingPartner_e:=ds:C1482.Trading_Partners.query("RegisteredIP = :1 and EndPoint = :2"; $ipClient; $endPointRequested).first()
@@ -32,7 +34,6 @@ If ($tradingPartner_e#Null:C1517)
 Else   //use hard coded list
 	
 	$allowedClientIPs_c:=New collection:C1472
-	$NOT_FOUND:=-1
 	Case of 
 		: ($endPointRequested="ELCAriba")  //testing
 			$allowedClientIPs_c.push("127.0.0.1")  //local host
@@ -45,10 +46,10 @@ Else   //use hard coded list
 	End case 
 	
 	If ($allowedClientIPs_c.indexOf($ipClient)=$NOT_FOUND)
-		$accessGranted:=False:C215
+		$accessGranted:=$DENIED
 		
 	Else 
-		$accessGranted:=True:C214
+		$accessGranted:=$PERMITTED
 	End if 
 	
 	return $accessGranted

@@ -18,6 +18,7 @@
 #DECLARE()->$header_o : Object
 
 var $i : Integer  //for interating over the header arrays
+var $parsedURL_c : Collection
 
 //get the headers
 ARRAY TEXT:C222($httpHeaderNames_at; 0)
@@ -33,9 +34,12 @@ Use ($header_o)
 		$header_o[$httpHeaderNames_at{$i}]:=$httpHeaderValues_at{$i}
 	End for 
 End use 
-$x:=Split string:C1554($header_o["X-URL"]; "/")
+
 Use (Session:C1714.storage)  //to share with other processes
 	Session:C1714.storage.header_o:=$header_o
 End use 
+
+//todo:use or remove this collection
+$parsedURL_c:=Split string:C1554($header_o["X-URL"]; "/")  //just curious
 
 return $header_o

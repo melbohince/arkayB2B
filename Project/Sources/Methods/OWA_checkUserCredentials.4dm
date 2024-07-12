@@ -21,7 +21,9 @@ var $authorizationValue : Text
 //testing vars:
 var $allowedAuthentications_c : Collection
 var $encodedUser : Text
-var $NOT_FOUND : Integer
+var $NOT_FOUND : Integer:=-1
+var $PERMITTED : Boolean:=True:C214
+var $DENIED : Boolean:=False:C215
 
 If (Count parameters:C259=0)  //testing
 	$endPointRequested:="ELCAriba"
@@ -33,7 +35,7 @@ Else
 	$authorizationValue:=Session:C1714.storage.header_o["Authorization"]
 End if 
 
-$accessGranted:=True:C214
+$accessGranted:=$PERMITTED
 
 //prototype hardcodes encoded username and password for BASIC Authentication, but could be a query:
 $webUser_e:=ds:C1482.Web_Users.query("EndPoint = :1 and BasicAuthentication = :2"; $endPointRequested; $authorizationValue).first()
@@ -43,7 +45,6 @@ If ($webUser_e#Null:C1517)
 Else   //use hard coded list
 	
 	$allowedAuthentications_c:=New collection:C1472
-	$NOT_FOUND:=-1
 	
 	BASE64 ENCODE:C895("ELC Ariba User:xxx"; $encodedUser)
 	$allowedAuthentications_c.push("Basic "+$encodedUser)
@@ -52,10 +53,10 @@ Else   //use hard coded list
 	$allowedAuthentications_c.push("Basic "+$encodedUser)
 	
 	If ($allowedAuthentications_c.indexOf($authorizationValue)=$NOT_FOUND)
-		$accessGranted:=False:C215
+		$accessGranted:=$DENIED
 		
 	Else 
-		$accessGranted:=True:C214
+		$accessGranted:=$PERMITTED
 	End if 
 	
 	return $accessGranted

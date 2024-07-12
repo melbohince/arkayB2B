@@ -18,7 +18,7 @@ see Example @ https://developer.4d.com/docs/WebServer/sessions/#storing-and-shar
 var $indexHit : Integer
 var $username; $password; $name; $goodPassword; $mySecret : Text
 var $user_e : cs:C1710.Web_UsersEntity
-
+var $info : Object
 
 ARRAY TEXT:C222($names_a; 0)
 ARRAY TEXT:C222($values_a; 0)
