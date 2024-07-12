@@ -15,7 +15,7 @@ var $TESTING : Boolean
 var $NEEDS_MAPPED : Integer
 var $local_e : cs:C1710.Web_InboxEntity
 var $status_o : Object
-var $ams_e : Object  //of ams type cs.edi_InboxEntity
+var $ams_e; $unique_e : Object  //of ams type cs.edi_InboxEntity
 
 $success:=False:C215
 
@@ -37,7 +37,17 @@ End if
 
 //mirror the local to the remote
 $local_e:=ds:C1482.Web_Inbox.get($inbox_pkid)
-//todo:owc test if this is unique
+If ($local_e=Null:C1517)  //wtf, thats how we got here
+	$success:=False:C215
+	return $success
+End if 
+
+$unique_e:=$ams_ds.edi_Inbox.query("ID = :1"; $local_e.ID).first()
+If (Not:C34($local_e=Null:C1517))  //id already in use in ams
+	$success:=False:C215
+	return $success
+End if 
+
 $ams_e.ID:=$local_e.ID
 
 //convert utc to local
