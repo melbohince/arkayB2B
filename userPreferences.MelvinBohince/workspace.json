@@ -2,23 +2,34 @@
 	"editors": [
 		{
 			"type": "method",
-			"id": 2147483630,
+			"id": 2147483638,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "OWA_Authenticate"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483643,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "aMs_Open_RemoteDataStore"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483628,
 			"codeDescriptor": {
 				"type": 5,
 				"databaseMethod": 8
 			}
 		},
 		{
-			"type": "method",
-			"id": 2147483639,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "OWC_ELC_ProjectSymphony"
-			}
+			"type": "explorer"
 		},
 		{
 			"type": "method",
-			"id": 2147483631,
+			"id": 2147483629,
 			"codeDescriptor": {
 				"type": 5,
 				"databaseMethod": 6
@@ -26,7 +37,15 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483636,
+			"id": 2147483640,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "OWC_ELC_ProjectSymphony"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483635,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "OWA_checkUserCredentials"
@@ -34,14 +53,11 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483634,
+			"id": 2147483632,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "OWC_initResponseObject"
 			}
-		},
-		{
-			"type": "explorer"
 		}
 	]
 }

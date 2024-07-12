@@ -19,6 +19,7 @@ var $indexHit : Integer
 var $username; $password; $name; $goodPassword; $mySecret : Text
 var $user_e : cs:C1710.Web_UsersEntity
 
+
 ARRAY TEXT:C222($names_a; 0)
 ARRAY TEXT:C222($values_a; 0)
 
@@ -31,7 +32,7 @@ $indexHit:=Find in array:C230($names_a; "password")
 $password:=$values_a{$indexHit}
 
 //this would be a query against web users
-$user_e:=ds:C1482.Web_Users("Username = :1"; $username).first()
+$user_e:=ds:C1482.Web_Users.query("Username = :1"; $username).first()
 If ($user_e=Null:C1517)
 	WEB SEND TEXT:C677("This userId is unknown")
 	return 

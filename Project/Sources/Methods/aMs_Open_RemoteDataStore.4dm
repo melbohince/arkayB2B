@@ -14,7 +14,6 @@ $AMS_REST_ADDRESS:=(Count parameters:C259=1) ? $AMS_REST_ADDRESS : "192.168.1.72
 
 var $connectTo : Object
 var $localId : Text
-var $AMS_REST_ADDRESS : Text
 
 $connectTo:=New object:C1471("type"; "4D Server"; "hostname"; $AMS_REST_ADDRESS)
 //$connectTo:=New object("type"; "4D Server"; "hostname"; WMS_TEST_SERVER_URL)  //"10.0.0.152:8080")

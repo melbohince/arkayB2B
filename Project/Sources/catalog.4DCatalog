@@ -60,7 +60,7 @@
 			<table_ref uuid="A9E51E9E6F934B819E0BF43A494CFCE9" name="Trading_Partners"/>
 		</field_ref>
 	</index>
-	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+	<base_extra>
 		<journal_file journal_file_enabled="true"/>
 	</base_extra>
 </base>

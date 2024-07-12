@@ -1,30 +1,30 @@
 {
 	"Sources/DatabaseMethods/onWebAuthentication.4dm": {
-		"startSelection": 21,
-		"endSelection": 21,
-		"firstSelectedLine": 61,
-		"lastSelectedLine": 61,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 36,
+		"lastSelectedLine": 36,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-08T17:56:33.518Z"
+		"stamp": "2024-07-12T19:58:43.490Z"
 	},
 	"Sources/DatabaseMethods/onWebConnection.4dm": {
-		"startSelection": 11,
-		"endSelection": 34,
-		"firstSelectedLine": 29,
-		"lastSelectedLine": 29,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-08T17:37:06.080Z"
+		"stamp": "2024-07-09T20:47:56.288Z"
 	},
 	"Sources/Methods/OWC_ELC_ProjectSymphony.4dm": {
-		"startSelection": 56,
+		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 23,
-		"lastSelectedLine": 23,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-08T17:19:52.903Z"
+		"stamp": "2024-07-09T11:20:25.365Z"
 	},
 	"Sources/Methods/OWA_checkClientWhiteList.4dm": {
 		"startSelection": 26,
@@ -90,13 +90,13 @@
 		"stamp": "2024-07-08T17:11:10.174Z"
 	},
 	"Sources/Methods/aMs_Open_RemoteDataStore.4dm": {
-		"startSelection": 44,
-		"endSelection": 58,
-		"firstSelectedLine": 8,
-		"lastSelectedLine": 8,
+		"startSelection": 19,
+		"endSelection": 19,
+		"firstSelectedLine": 14,
+		"lastSelectedLine": 14,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-06T02:09:33.097Z"
+		"stamp": "2024-07-12T20:01:09.832Z"
 	},
 	"Sources/Methods/TSTimeStamp.4dm": {
 		"startSelection": 0,
@@ -160,5 +160,14 @@
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2024-07-06T14:34:40.428Z"
+	},
+	"Sources/Methods/OWA_Authenticate.4dm": {
+		"startSelection": 41,
+		"endSelection": 41,
+		"firstSelectedLine": 32,
+		"lastSelectedLine": 32,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-12T20:04:53.666Z"
 	}
 }

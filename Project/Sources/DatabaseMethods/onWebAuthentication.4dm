@@ -27,7 +27,7 @@ $ipClient : Text; $ipServer : Text; \
 $user : Text; $password : Text)\
 ->$accessGranted : Boolean
 
-var $ACCESS_DENIED : Boolean  //just for readability rather than setting $accessGranted to false
+var $ACCESS_DENIED : Boolean:=False:C215  //just for readability rather than setting $accessGranted to false
 var $header_o : Object  //header arrays packed into dictionary object and placed into Session.storage
 var $response_o : Object  //will be placed into Session.storage
 
@@ -35,7 +35,6 @@ $header_o:=OWC_initHeaderObject
 
 $response_o:=OWC_initResponseObject("202 Accepted")
 
-$ACCESS_DENIED:=False:C215  //so return's stand out when reading
 $accessGranted:=False:C215  //must answer the riddle first my precious
 
 //mark:Allow for route specific authentications in the caseof structure below
