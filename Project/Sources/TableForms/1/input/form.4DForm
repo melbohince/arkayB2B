@@ -111,7 +111,7 @@
 					"type": "input",
 					"dataSource": "[Web_Inbox:1]PayloadID:6",
 					"top": 35,
-					"left": 445,
+					"left": 460,
 					"width": 270,
 					"height": 17,
 					"enterable": false
@@ -120,14 +120,33 @@
 					"type": "text",
 					"text": "PayloadID:",
 					"top": 35,
-					"left": 375,
-					"width": 65,
-					"height": 17
+					"left": 376,
+					"width": 77,
+					"height": 17,
+					"textAlign": "right"
+				},
+				"label_Received1": {
+					"type": "text",
+					"text": "SentToAMS_UTC:",
+					"top": 60,
+					"left": 341,
+					"width": 112,
+					"height": 17,
+					"textAlign": "right"
+				},
+				"field_Received1": {
+					"type": "input",
+					"dataSource": "[Web_Inbox:1]SentToAMS_UTC:5",
+					"top": 60,
+					"left": 460,
+					"width": 210,
+					"height": 17,
+					"enterable": false
 				}
 			}
 		}
 	],
-	"geometryStamp": 166,
+	"geometryStamp": 211,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -33,7 +33,7 @@ Use ($header_o)
 		$header_o[$httpHeaderNames_at{$i}]:=$httpHeaderValues_at{$i}
 	End for 
 End use 
-
+$x:=Split string:C1554($header_o["X-URL"]; "/")
 Use (Session:C1714.storage)  //to share with other processes
 	Session:C1714.storage.header_o:=$header_o
 End use 

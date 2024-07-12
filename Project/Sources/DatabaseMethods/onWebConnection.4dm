@@ -35,13 +35,7 @@ Case of
 		
 		$recentMessages_json:=Inbox_RecentMessages(3)
 		
-		If (Length:C16($recentMessages_json)=0)
-			$result_t:=OWC_setResponse("404 Not Found")
-			$result_t:=OWC_sendResponse
-		End if 
 		
-		//send it
-		WEB SEND TEXT:C677($recentMessages_json; "application/json")
 		
 		//$result_t:=OWC_sendResponse
 		

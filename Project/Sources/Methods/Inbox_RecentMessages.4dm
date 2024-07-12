@@ -31,10 +31,11 @@ returns:
 }
 */
 
-#DECLARE($collectionLimitor : Integer)->$recentMessages_json : Text
+#DECLARE($collectionLimitor : Integer)->$result_t : Text
 
 var $inbox_c : Collection  //cs.Web_InboxSelection
 var $recentMessages_o : Object
+var $recentMessages_json : Text
 
 //default to last 5
 $collectionLimitor:=(Count parameters:C259=1) ? $collectionLimitor : 5
@@ -43,10 +44,21 @@ $collectionLimitor:=(Count parameters:C259=1) ? $collectionLimitor : 5
 $inbox_c:=ds:C1482.Web_Inbox.all()\
 .orderBy("ID desc")\
 .slice(0; $collectionLimitor)\
-.toCollection("ID,Received_UTC,PayloadID")
+.toCollection("ID,Received_UTC,PayloadID,SentToAMS_UTC")
 
+If ($inbox_c.length=0)
+	$result_t:=OWC_setResponse("404 Not Found")
+	$result_t:=OWC_sendResponse
+End if 
+
+//build convert collection to object
 $recentMessages_o:=New object:C1471("recent_messages"; $inbox_c)
 
 $recentMessages_json:=JSON Stringify:C1217($recentMessages_o; *)
+//ALERT($recentMessages_json)//preview
 
-//ALERT($recentMessages_json)
+//send it
+WEB SEND TEXT:C677($recentMessages_json; "application/json")
+$result_t:="200 OK"
+
+return $result_t
